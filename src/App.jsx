@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import useProgress from './hooks/useProgress.js'
+import useDarkMode from './hooks/useDarkMode.js'
 import Shell from './components/layout/Shell.jsx'
 import DashboardView from './components/dashboard/DashboardView.jsx'
 import CoursView from './components/cours/CoursView.jsx'
@@ -11,6 +12,7 @@ export default function App() {
   const [currentView, setCurrentView] = useState('dashboard')
   const [viewParams, setViewParams] = useState({})
   const progress = useProgress()
+  const [dark, toggleDark] = useDarkMode()
 
   const navigate = (view, params = {}) => {
     setCurrentView(view)
@@ -26,7 +28,7 @@ export default function App() {
   }
 
   return (
-    <Shell currentView={currentView} navigate={navigate} masterScore={progress.masterScore}>
+    <Shell currentView={currentView} navigate={navigate} masterScore={progress.masterScore} dark={dark} toggleDark={toggleDark}>
       {views[currentView] || views.dashboard}
     </Shell>
   )
