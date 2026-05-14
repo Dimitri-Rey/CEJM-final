@@ -1410,6 +1410,512 @@ const notions = [
         reponse: 'Par le DROIT DE PRODUCTEUR (art. L341-1 CPI) : protège celui qui a investi financièrement et humainement pour constituer la base. Durée : 15 ans. Exemple : Lacentrale.fr vs Leparking.fr (jugement 2021).'
       }
     ]
+  },
+  {
+    id: 'marche-concurrence',
+    tier: 2,
+    matiere: 'eco',
+    titre: 'Le marché & la concurrence',
+    sousTitre: 'Équilibre O=D · CPP · Oligopole · Autorités de régulation',
+    cours: 'Le marché est le lieu de rencontre entre l\'offre et la demande qui détermine le prix d\'équilibre. La concurrence pure et parfaite (CPP) est un modèle théorique défini par 5 conditions qui permettent un équilibre optimal. En pratique, les marchés sont souvent imparfaits : oligopoles (peu d\'offreurs dominants) ou monopoles (un seul offreur). L\'Autorité de la concurrence et la DGCCRF veillent au bon fonctionnement des marchés.',
+    pointsCles: [
+      'Équilibre : si D > O → prix montent ; si O > D → prix baissent',
+      'CPP — 5 conditions : atomicité (nombreux acteurs), homogénéité (produits identiques), transparence (info disponible), libre entrée (sans barrières), mobilité (des facteurs de production)',
+      'Oligopole : peu d\'offreurs dominants (cloud : AWS + Azure + Google = 71%)',
+      'Monopole : un seul offreur (SNCF sur certaines lignes)',
+      'Autorité de la concurrence : lutte contre ententes et abus de position dominante',
+      'DGCCRF : transparence de l\'information et protection du consommateur',
+      'Externalités : négative (pollution sans compensation) / positive (effet réseau sans contrepartie)'
+    ],
+    auteurs: [],
+    sujetsRef: ['ref-2024', 'packitoo-2022', 'ovhcloud-nc-2025'],
+    cards: [
+      {
+        id: 'marche-concurrence-q1',
+        question: 'Quelles sont les 5 conditions de la concurrence pure et parfaite ?',
+        reponse: '1. Atomicité (nombreux acheteurs et vendeurs) 2. Homogénéité (produits identiques) 3. Transparence (information parfaite et accessible) 4. Libre entrée/sortie (aucune barrière) 5. Mobilité des facteurs de production.'
+      },
+      {
+        id: 'marche-concurrence-q2',
+        question: 'Que se passe-t-il quand l\'offre est supérieure à la demande ?',
+        reponse: 'Les prix baissent (O > D → excédent d\'offre → concurrence entre vendeurs → baisse des prix pour écouler les stocks).'
+      },
+      {
+        id: 'marche-concurrence-q3',
+        question: 'Qu\'est-ce qu\'un oligopole ? Donner un exemple.',
+        reponse: 'Marché dominé par peu d\'offreurs. Ex : cloud (AWS 46%, Azure 17%, Google 8%) ou automobile (quelques constructeurs dominants en Europe).'
+      },
+      {
+        id: 'marche-concurrence-q4',
+        question: 'Quel est le rôle de l\'Autorité de la concurrence ?',
+        reponse: 'Veiller au bon fonctionnement du marché. Elle sanctionne les ententes illicites (accord entre concurrents pour fixer les prix) et les abus de position dominante.'
+      },
+      {
+        id: 'marche-concurrence-q5',
+        question: 'Quelle est la différence entre Autorité de la concurrence et DGCCRF ?',
+        reponse: 'Autorité de la concurrence : pratiques anticoncurrentielles entre entreprises (ententes, abus). DGCCRF : transparence et protection du consommateur (publicité trompeuse, clauses abusives).'
+      },
+      {
+        id: 'marche-concurrence-q6',
+        question: 'Qu\'est-ce qu\'une externalité négative ? Comment l\'État la corrige-t-il ?',
+        reponse: 'Effet négatif sur un tiers sans compensation (ex: pollution d\'une usine). L\'État corrige par des taxes (ex: taxe carbone) ou des normes réglementaires.'
+      }
+    ]
+  },
+  {
+    id: 'politiques-economiques',
+    tier: 2,
+    matiere: 'eco',
+    titre: 'Politiques économiques & croissance',
+    sousTitre: 'PIB · Facteurs de production · Schumpeter · Action de l\'État',
+    cours: 'La croissance économique se mesure par l\'augmentation du PIB (Produit Intérieur Brut), différence entre la production et les consommations intermédiaires. Elle repose sur deux facteurs de production : le travail (quantitatif et qualitatif) et le capital (équipements, compétences). Le progrès technique (Schumpeter) est le moteur de la croissance à long terme. L\'État agit par des politiques conjoncturelles (court terme) et structurelles (long terme).',
+    pointsCles: [
+      'PIB = production — consommations intermédiaires = somme des valeurs ajoutées',
+      'Facteurs de production : travail (quantitatif = main-d\'œuvre, qualitatif = formation/compétences) + capital (équipements, infrastructures)',
+      'Progrès technique selon Schumpeter : 5 innovations (produit, procédé, mode de production, nouveau marché, matière première)',
+      'Politiques conjoncturelles (court terme) : budgétaire, sociale, fiscale → corriger déséquilibres, soutenir croissance, réduire chômage',
+      'Politiques structurelles (long terme) : emploi, santé, éducation → transformation durable',
+      'Limites de l\'action de l\'État : contraintes européennes (UE), dette publique, mondialisation'
+    ],
+    auteurs: [
+      { nom: 'Schumpeter', theorie: 'Progrès technique par l\'innovation (5 types) = moteur de la croissance à long terme' }
+    ],
+    sujetsRef: ['packitoo-2022', 'purecontrol-s-2024'],
+    cards: [
+      {
+        id: 'politiques-economiques-q1',
+        question: 'Comment calcule-t-on le PIB ?',
+        reponse: 'PIB = somme des valeurs ajoutées = Production — Consommations intermédiaires. Il mesure la richesse créée sur un territoire pendant une période.'
+      },
+      {
+        id: 'politiques-economiques-q2',
+        question: 'Quels sont les 2 facteurs de production ?',
+        reponse: '1. Le TRAVAIL : aspect quantitatif (nombre de salariés, heures) et qualitatif (formation, compétences). 2. Le CAPITAL : équipements, machines, infrastructures, technologies.'
+      },
+      {
+        id: 'politiques-economiques-q3',
+        question: 'Quelle est la différence entre politique conjoncturelle et structurelle ?',
+        reponse: 'Conjoncturelle = court terme pour corriger un déséquilibre immédiat (chômage, inflation). Structurelle = long terme pour transformer durablement l\'économie (réforme éducation, marché du travail).'
+      },
+      {
+        id: 'politiques-economiques-q4',
+        question: 'Donnez 2 exemples de politiques conjoncturelles.',
+        reponse: '1. Politique budgétaire (commande publique, investissement d\'État). 2. Politique fiscale (baisser les impôts pour stimuler la consommation). Objectif : relancer l\'activité ou freiner l\'inflation.'
+      },
+      {
+        id: 'politiques-economiques-q5',
+        question: 'Quelles sont les limites de l\'action économique de l\'État ?',
+        reponse: 'Contraintes européennes (pacte de stabilité, limite déficit 3% PIB), mondialisation (concurrence fiscale), comportements des agents économiques (paradoxe de l\'épargne), dette publique.'
+      },
+      {
+        id: 'politiques-economiques-q6',
+        question: 'Comment le progrès technique stimule-t-il la croissance selon Schumpeter ?',
+        reponse: 'Le progrès technique (5 formes d\'innovation) améliore la productivité, crée de nouveaux marchés et de nouveaux emplois, compensant la destruction des anciens. C\'est la \'destruction créatrice\' moteur de la croissance.'
+      }
+    ]
+  },
+  {
+    id: 'numerique-entreprise',
+    tier: 2,
+    matiere: 'eco',
+    titre: 'Le numérique & l\'entreprise',
+    sousTitre: 'Désintermédiation · Reengineering · Valeur ajoutée du numérique',
+    cours: 'Le numérique transforme l\'entreprise sur quatre dimensions : l\'offre (nouveaux modes de consommation), la production (automatisation, IA, optimisation des processus), l\'organisation (nouvelles structures, travail collaboratif) et la consommation (économie d\'usage, partage). La désintermédiation supprime les intermédiaires traditionnels tandis que la réintermédiation crée de nouveaux intermédiaires numériques (plateformes). Le reengineering (Hammer & Champy) consiste à repenser radicalement les processus pour gagner en compétitivité.',
+    pointsCles: [
+      'Sur l\'OFFRE : évolution modes de consommation, réduction coûts, amélioration productivité, ubérisation de l\'économie',
+      'Sur la PRODUCTION : automatisation, IA, optimisation processus, amélioration RH et relation client',
+      'Sur l\'ORGANISATION : nouveaux métiers, amélioration chaîne de valeur, télétravail, baisse des coûts fixes',
+      'Sur la CONSOMMATION : économie d\'usage (location > propriété), économie de partage',
+      'DÉSINTERMÉDIATION : suppression d\'intermédiaires → coûts ↓ mais pouvoir clients ↑',
+      'RÉINTERMÉDIATION : nouveaux intermédiaires numériques (plateformes) → meilleure visibilité du marché',
+      'REENGINEERING (Hammer & Champy) : repenser radicalement l\'organisation pour rester compétitif grâce au numérique'
+    ],
+    auteurs: [
+      { nom: 'Hammer & Champy', theorie: 'Reengineering — repenser radicalement les processus organisationnels grâce au numérique' }
+    ],
+    sujetsRef: ['novefi-2023', 'digim-2025', 'ovhcloud-nc-2025'],
+    cards: [
+      {
+        id: 'numerique-entreprise-q1',
+        question: 'Qu\'est-ce que la désintermédiation ?',
+        reponse: 'Suppression des intermédiaires traditionnels grâce au numérique. Ex: Amazon permet aux producteurs de vendre directement aux consommateurs. Avantage : coûts réduits. Risque : pouvoir accru des clients.'
+      },
+      {
+        id: 'numerique-entreprise-q2',
+        question: 'Qu\'est-ce que la réintermédiation ?',
+        reponse: 'Apparition de nouveaux intermédiaires numériques (plateformes) qui remplacent les anciens. Ex: Airbnb réintermédie le marché de l\'hébergement. La plateforme devient incontournable.'
+      },
+      {
+        id: 'numerique-entreprise-q3',
+        question: 'Qu\'est-ce que le reengineering selon Hammer & Champy ?',
+        reponse: 'Repenser radicalement les processus de l\'entreprise (et non les améliorer à la marge) pour obtenir des gains spectaculaires de performance grâce aux outils numériques. Objectif : rester compétitif face aux disruptions.'
+      },
+      {
+        id: 'numerique-entreprise-q4',
+        question: 'Quels sont les 4 domaines d\'impact du numérique sur l\'entreprise ?',
+        reponse: '1. Offre (nouveaux modes de consommation, réduction coûts) 2. Production (automatisation, IA) 3. Organisation (nouvelles structures, télétravail) 4. Consommation (économie d\'usage et de partage).'
+      },
+      {
+        id: 'numerique-entreprise-q5',
+        question: 'Qu\'est-ce que l\'économie d\'usage ?',
+        reponse: 'Passage de la propriété à l\'usage (louer plutôt qu\'acheter). Ex: Netflix, Spotify, location de voitures. Rendu possible par le numérique qui réduit les coûts de transaction.'
+      },
+      {
+        id: 'numerique-entreprise-q6',
+        question: 'Quels sont les risques du numérique pour l\'entreprise ?',
+        reponse: 'Malveillance (piratage, cyberattaques), non-respect RGPD (sanctions CNIL), coût financier (investissements, maintenance), coût humain (formation, résistance au changement), obsolescence rapide du matériel.'
+      }
+    ]
+  },
+  {
+    id: 'structures-manageriales',
+    tier: 2,
+    matiere: 'management',
+    titre: 'Structures managériales & coordination',
+    sousTitre: 'Mintzberg · Crozier · Likert · Blake & Mouton — 4 types de structure',
+    cours: 'La structure organisationnelle définit comment sont répartis les tâches, l\'autorité et les responsabilités. Mintzberg identifie 4 types principaux : fonctionnelle (par fonctions), divisionnelle (par produits/zones), matricielle (croisement) et flexible/en réseau (par projet). Il décrit aussi 6 mécanismes de coordination et 3 types de processus (Porter). Crozier ajoute que les structures doivent devenir flexibles face à la complexité. Likert et Blake & Mouton théorisent les styles de direction.',
+    pointsCles: [
+      'Structure fonctionnelle : répartition par fonctions (production, commercial, RH…) — simple mais cloisonnée',
+      'Structure divisionnelle : répartition par produits ou zones géographiques — autonomie mais duplication',
+      'Structure matricielle : croisement division × fonctions — souplesse mais double hiérarchie',
+      'Structure flexible/en réseau (Crozier) : par projet, adaptable — réactivité mais instabilité',
+      '6 mécanismes de coordination (Mintzberg) : ajustement mutuel, supervision directe, standardisation des procédés/résultats/qualifications/normes',
+      'Styles de direction Likert : autoritaire, paternaliste, consultatif, participatif',
+      'Grille Blake & Mouton : 5 styles selon intérêt pour la production vs les personnes'
+    ],
+    auteurs: [
+      { nom: 'Mintzberg', theorie: '6 mécanismes de coordination, 3 types de processus (productifs, support, pilotage), stratégie délibérée vs émergente' },
+      { nom: 'Crozier', theorie: 'Structures flexibles en réseau — théorie de la contingence (structure s\'adapte à l\'environnement)' },
+      { nom: 'Likert', theorie: '4 styles de direction : autoritaire, paternaliste, consultatif, participatif' },
+      { nom: 'Blake & Mouton', theorie: 'Grille managériale : 5 styles selon équilibre intérêt production/personnes' }
+    ],
+    sujetsRef: ['agricoopia-nc-2022', 'novefi-2023'],
+    cards: [
+      {
+        id: 'structures-manageriales-q1',
+        question: 'Quels sont les 4 types de structure organisationnelle ?',
+        reponse: '1. Fonctionnelle (par fonctions : production, commercial, RH) 2. Divisionnelle (par produits ou zones) 3. Matricielle (croisement division × fonctions) 4. Flexible/en réseau (par projet — Crozier).'
+      },
+      {
+        id: 'structures-manageriales-q2',
+        question: 'Quels sont les 6 mécanismes de coordination selon Mintzberg ?',
+        reponse: '1. Ajustement mutuel (communication informelle) 2. Supervision directe (autorité hiérarchique) 3. Standardisation des procédés 4. Standardisation des résultats 5. Standardisation des qualifications 6. Standardisation des normes.'
+      },
+      {
+        id: 'structures-manageriales-q3',
+        question: 'Qu\'est-ce que la théorie de la contingence (Crozier/Lawrence & Lorsch) ?',
+        reponse: 'La structure et la stratégie de l\'entreprise doivent s\'adapter aux facteurs externes (environnement, technologie, taille). Il n\'existe pas de structure universelle — \'tout dépend du contexte\'.'
+      },
+      {
+        id: 'structures-manageriales-q4',
+        question: 'Quels sont les 4 styles de direction selon Likert ?',
+        reponse: '1. Autoritaire (décisions centralisées, peu de communication) 2. Paternaliste (autorité bienveillante) 3. Consultatif (avis des salariés pris en compte) 4. Participatif (décisions collectives, autonomie).'
+      },
+      {
+        id: 'structures-manageriales-q5',
+        question: 'Que dit Mintzberg sur la stratégie délibérée et émergente ?',
+        reponse: 'Stratégie délibérée : planifiée à l\'avance, réfléchie, mise en œuvre intentionnellement. Stratégie émergente : non planifiée, réactive au contexte, née des pratiques quotidiennes. Les deux coexistent dans les entreprises.'
+      },
+      {
+        id: 'structures-manageriales-q6',
+        question: 'Quels sont les 3 types de processus selon Porter ?',
+        reponse: '1. Productifs (activités principales créatrices de valeur : production, commercial) 2. Support (activités de soutien : RH, SI, achats) 3. Pilotage (décisions stratégiques de la direction).'
+      },
+      {
+        id: 'structures-manageriales-q7',
+        question: 'Qu\'est-ce que l\'ajustement mutuel (Mintzberg) ?',
+        reponse: 'Mécanisme de coordination informel : les salariés s\'auto-organisent par communication directe sans intervention hiérarchique. Typique des petites équipes ou des projets innovants.'
+      }
+    ]
+  },
+  {
+    id: 'strategies-developpement',
+    tier: 2,
+    matiere: 'management',
+    titre: 'Stratégies de développement',
+    sousTitre: 'Internationalisation · Croissance interne vs externe · Démarche LCAG',
+    cours: 'Les stratégies de développement définissent comment l\'entreprise va croître. Elle peut s\'internationaliser (élargir ses marchés géographiquement) ou choisir entre croissance interne (développer ses propres ressources) et croissance externe (acquérir d\'autres entreprises). La démarche stratégique LCAG comporte 4 étapes : définir les objectifs, analyser (SWOT), choisir et mettre en œuvre, puis contrôler. Mintzberg distingue stratégie délibérée (planifiée) et émergente (réactive).',
+    pointsCles: [
+      'Internationalisation ++ : élargissement marché et CA, économies d\'échelle, réduction coûts, diversification des risques',
+      'Internationalisation -- : coûts d\'implantation, risques de change et politiques, différences culturelles et juridiques',
+      'Croissance INTERNE (organique) : développer ses propres ressources et capacités. Lente mais maîtrise du processus et de la culture',
+      'Croissance EXTERNE : acquérir d\'autres entreprises (fusion, absorption, prise de participation). Rapide mais risques d\'intégration',
+      'Démarche LCAG : 1) Définir objectifs 2) Diagnostic SWOT 3) Choisir et mettre en œuvre 4) Contrôler',
+      'NOVEFI : croissance externe (rachat CMedical + ASthen) pour entrer dans la santé'
+    ],
+    auteurs: [
+      { nom: 'Ansoff', theorie: 'Matrice des stratégies — spécialisation/diversification, croissance interne/externe' },
+      { nom: 'Mintzberg', theorie: 'Stratégie délibérée (planifiée) vs émergente (réactive au contexte)' }
+    ],
+    sujetsRef: ['novefi-2023', 'purecontrol-s-2024', 'ovhcloud-nc-2025'],
+    cards: [
+      {
+        id: 'strategies-developpement-q1',
+        question: 'Quels sont les avantages de la croissance externe ?',
+        reponse: 'Rapide (accès immédiat à de nouvelles ressources et marchés), permet d\'éliminer un concurrent, donne accès à des compétences ou technologies sans délai de développement.'
+      },
+      {
+        id: 'strategies-developpement-q2',
+        question: 'Quels sont les risques de la croissance externe ?',
+        reponse: 'Coût élevé d\'acquisition, difficultés d\'intégration culturelle (culture d\'entreprise différente), risques de licenciements, dette financière, surestimation des synergies.'
+      },
+      {
+        id: 'strategies-developpement-q3',
+        question: 'Qu\'est-ce que la croissance interne ?',
+        reponse: 'Développer ses propres ressources et capacités (recrutement, R&D, nouveaux produits). Avantages : maîtrise du processus, préservation identité et culture, climat social. Inconvénients : lente, investissement progressif.'
+      },
+      {
+        id: 'strategies-developpement-q4',
+        question: 'Quelles sont les 4 étapes de la démarche LCAG ?',
+        reponse: '1. Définir les objectifs 2. Analyse/diagnostic (SWOT : forces, faiblesses, opportunités, menaces) 3. Choix et mise en œuvre de la stratégie 4. Contrôle des résultats.'
+      },
+      {
+        id: 'strategies-developpement-q5',
+        question: 'Pourquoi NOVEFI choisit-elle la croissance externe (rachat ASthen) ?',
+        reponse: 'Pour accéder rapidement au marché de la santé numérique sans développer les compétences médicales en interne. La croissance externe lui permet de devenir acteur incontournable de l\'imagerie médicale en France en 2 ans.'
+      },
+      {
+        id: 'strategies-developpement-q6',
+        question: 'Quels sont les avantages de l\'internationalisation ?',
+        reponse: 'Élargissement du marché et du CA, économies d\'échelle, réduction des coûts de production, diversification des risques, accès à de nouvelles compétences et technologies.'
+      }
+    ]
+  },
+  {
+    id: 'diagnostic-swot-ressources',
+    tier: 2,
+    matiere: 'management',
+    titre: 'Diagnostic SWOT & ressources de l\'entreprise',
+    sousTitre: 'SWOT · Penrose — ressources tangibles et intangibles',
+    cours: 'Le diagnostic stratégique complet combine une analyse externe (PESTEL + Porter) et une analyse interne. La matrice SWOT synthétise : Forces et Faiblesses (interne) + Opportunités et Menaces (externe). Penrose théorise que l\'avantage concurrentiel durable repose sur les ressources uniques de l\'entreprise, qu\'elles soient tangibles (physiques, financières, humaines) ou intangibles (brevets, marque, réputation, savoir-faire organisationnel).',
+    pointsCles: [
+      'SWOT — 4 dimensions : Forces (interne +), Faiblesses (interne -), Opportunités (externe +), Menaces (externe -)',
+      'Diagnostic externe : PESTEL (macro) + Porter (micro) + parties prenantes (méso)',
+      'Diagnostic interne : ressources et compétences selon Penrose',
+      'Ressources TANGIBLES (Penrose) : financières (capitaux, trésorerie), matérielles (équipements, machines), humaines (salariés, dirigeants), informationnelles (SI)',
+      'Ressources INTANGIBLES : immatérielles/techniques (brevets, R&D, marque), réputationnelles (notoriété, image), organisationnelles (culture, savoir-faire)',
+      'Hamel & Prahalad : l\'avantage concurrentiel = compétences individuelles + collectives qui se combinent'
+    ],
+    auteurs: [
+      { nom: 'Penrose', theorie: 'Théorie des ressources — avantage concurrentiel durable fondé sur les ressources uniques (tangibles et intangibles)' },
+      { nom: 'Hamel & Prahalad', theorie: 'Compétences clés (core competencies) — combinaison de compétences individuelles et collectives = avantage concurrentiel durable' }
+    ],
+    sujetsRef: ['idemia-nc-2023', 'ovhcloud-nc-2025', 'ref-2024'],
+    cards: [
+      {
+        id: 'diagnostic-swot-ressources-q1',
+        question: 'Quels sont les 4 quadrants de la matrice SWOT ?',
+        reponse: 'Forces (avantages internes), Faiblesses (limites internes), Opportunités (tendances externes favorables), Menaces (risques externes). Forces et Faiblesses = interne. Opportunités et Menaces = externe.'
+      },
+      {
+        id: 'diagnostic-swot-ressources-q2',
+        question: 'Qu\'est-ce que les ressources tangibles selon Penrose ?',
+        reponse: 'Ressources physiques et mesurables : financières (capitaux, trésorerie), matérielles (équipements, machines, bâtiments), humaines (salariés, compétences), informationnelles (système d\'information).'
+      },
+      {
+        id: 'diagnostic-swot-ressources-q3',
+        question: 'Qu\'est-ce que les ressources intangibles selon Penrose ?',
+        reponse: 'Ressources immatérielles : techniques (brevets, R&D, marque), réputationnelles (notoriété, image de marque), organisationnelles (culture d\'entreprise, savoir-faire, processus).'
+      },
+      {
+        id: 'diagnostic-swot-ressources-q4',
+        question: 'Comment OVHcloud exploite-t-elle ses ressources intangibles ?',
+        reponse: '137 familles de brevets (intangibles techniques), notoriété comme 1er hébergeur européen (réputationnelles), culture d\'intégration verticale unique et savoir-faire depuis 1999 (organisationnelles).'
+      },
+      {
+        id: 'diagnostic-swot-ressources-q5',
+        question: 'Que disent Hamel & Prahalad sur les compétences clés ?',
+        reponse: 'L\'avantage concurrentiel durable repose sur la combinaison de compétences individuelles (expertise de chaque salarié) et collectives (savoir-faire organisationnel). Ces \'core competencies\' sont difficiles à imiter.'
+      },
+      {
+        id: 'diagnostic-swot-ressources-q6',
+        question: 'Quelle est la différence entre SWOT et PESTEL ?',
+        reponse: 'PESTEL = analyse macro-environnementale EXTERNE uniquement (6 dimensions globales). SWOT = synthèse combinant INTERNE (Forces/Faiblesses) + EXTERNE (Opportunités/Menaces). Le PESTEL alimente les O et M du SWOT.'
+      }
+    ]
+  },
+  {
+    id: 'motivation-vroom',
+    tier: 2,
+    matiere: 'management',
+    titre: 'La motivation — Vroom & leviers d\'action',
+    sousTitre: 'Théorie des attentes · Leviers individuels et collectifs',
+    cours: 'Victor Vroom complète Maslow et Herzberg avec sa théorie des attentes : la motivation d\'un salarié dépend de trois facteurs — son espérance de succès (effort → performance), l\'instrumentalité (performance → récompense), et la valence (valeur accordée à la récompense). Un salarié est motivé seulement si les trois facteurs sont positifs simultanément. Les leviers de motivation se déclinent en actions individuelles (promotion, primes) et collectives (projets fédérateurs, amélioration des conditions).',
+    pointsCles: [
+      'Vroom : Motivation = Espérance (effort→performance) × Instrumentalité (perf→récompense) × Valence (valeur de la récompense)',
+      'Si l\'un des 3 facteurs = 0 → motivation nulle, quel que soit les autres',
+      'Actions individuelles : promotion, évolution de carrière, autonomie, responsabilités, primes, avantages en nature',
+      'Actions collectives : prime d\'équipe, amélioration des conditions de travail, projet commun fédérateur, communication interne',
+      'Risques d\'une non-motivation : absentéisme, turn-over, accidents du travail, perte de performance, conflits sociaux',
+      'Toujours mobiliser Maslow + Herzberg + Vroom ensemble pour une réponse complète sur la motivation'
+    ],
+    auteurs: [
+      { nom: 'Vroom', theorie: 'Théorie des attentes : Motivation = Espérance × Instrumentalité × Valence' }
+    ],
+    sujetsRef: ['agricoopia-nc-2022', 'idemia-nc-2023', 'ref-2024'],
+    cards: [
+      {
+        id: 'motivation-vroom-q1',
+        question: 'Quels sont les 3 facteurs de la théorie des attentes de Vroom ?',
+        reponse: '1. Espérance : croire que l\'effort mène à la performance. 2. Instrumentalité : croire que la performance mène à une récompense. 3. Valence : valeur que le salarié accorde à la récompense. Les 3 doivent être positifs.'
+      },
+      {
+        id: 'motivation-vroom-q2',
+        question: 'Si un salarié ne croit pas que sa performance sera récompensée, que prédit Vroom ?',
+        reponse: 'L\'instrumentalité = 0 → la motivation globale = 0 (0 × tout = 0). Même si l\'effort mène à la performance et que la récompense est attractive, sans lien performance-récompense perçu, la motivation s\'effondre.'
+      },
+      {
+        id: 'motivation-vroom-q3',
+        question: 'Quels sont les risques d\'une non-motivation des salariés ?',
+        reponse: 'Absentéisme, fort turn-over (coût de remplacement élevé), accidents du travail (AT/MP), perte de performance et de qualité, conflits sociaux, mauvaise image employeur.'
+      },
+      {
+        id: 'motivation-vroom-q4',
+        question: 'Citez 3 leviers de motivation INDIVIDUELS.',
+        reponse: 'Promotion / évolution de carrière, autonomie dans le travail, responsabilités accrues, primes de performance, avantages en nature (voiture, mutuelle améliorée).'
+      },
+      {
+        id: 'motivation-vroom-q5',
+        question: 'Citez 2 leviers de motivation COLLECTIFS.',
+        reponse: '1. Prime d\'équipe ou intéressement/participation (partage de la valeur ajoutée). 2. Projet commun fédérateur qui donne du sens et favorise la cohésion (ex: projet RSE, certification qualité).'
+      },
+      {
+        id: 'motivation-vroom-q6',
+        question: 'Comment articuler Maslow, Herzberg et Vroom dans une réponse sur la motivation ?',
+        reponse: 'Maslow : identifier le niveau de besoin visé. Herzberg : distinguer si le levier évite l\'insatisfaction (hygiène) ou crée la motivation (moteur). Vroom : vérifier que le salarié croit en l\'effort→perf→récompense. Les 3 approches sont complémentaires.'
+      }
+    ]
+  },
+  {
+    id: 'si-decisions',
+    tier: 2,
+    matiere: 'management',
+    titre: 'Système d\'information & décisions',
+    sousTitre: 'PGI/ERP · Styles de décision (Ansoff) · Rationalité limitée (Simon)',
+    cours: 'Le système d\'information (SI) est l\'ensemble des ressources permettant de collecter, traiter, stocker et diffuser les informations nécessaires à la prise de décision. Le PGI (Progiciel de Gestion Intégré / ERP) unifie toutes les fonctions de l\'entreprise dans un système centralisé. Les décisions se classent selon Ansoff en stratégiques (long terme), tactiques (moyen terme) et opérationnelles (court terme). Herbert Simon relativise la rationalité : les décideurs prennent des décisions "rationnellement limitées", pas optimales.',
+    pointsCles: [
+      'Le SI : collecte, traitement, sécurisation et diffusion de l\'information pour aider à la décision',
+      'PGI/ERP : unification des informations, centralisation des données, partage automatisé, disponibilité, fluidification des processus',
+      '3 types de décisions (Ansoff) : stratégiques (long terme, direction), tactiques (moyen terme, cadres), opérationnelles (court terme, exécution)',
+      'Rationalité limitée (Simon) : pas de décision optimale — décision rationnelle compte tenu du contexte et de l\'information disponible',
+      '"Il n\'y a pas de bonne décision, juste une décision rationnelle limitée par l\'environnement" — H. Simon',
+      'Asymétrie d\'information : l\'une des parties dispose d\'info que l\'autre n\'a pas → risque de comportement opportuniste'
+    ],
+    auteurs: [
+      { nom: 'Ansoff', theorie: '3 niveaux de décisions : stratégiques (long terme) / tactiques (moyen terme) / opérationnelles (court terme)' },
+      { nom: 'Herbert Simon', theorie: 'Rationalité limitée — il n\'y a pas de décision optimale, seulement une décision rationnelle compte tenu du contexte' }
+    ],
+    sujetsRef: ['agricoopia-nc-2022', 'novefi-2023', 'digim-2025'],
+    cards: [
+      {
+        id: 'si-decisions-q1',
+        question: 'Quels sont les 3 types de décisions selon Ansoff ?',
+        reponse: '1. Stratégiques (long terme, direction générale — ex: diversification) 2. Tactiques (moyen terme, cadres — ex: lancer un produit) 3. Opérationnelles (court terme, exécution — ex: gérer les stocks du jour).'
+      },
+      {
+        id: 'si-decisions-q2',
+        question: 'Qu\'est-ce que la rationalité limitée selon Herbert Simon ?',
+        reponse: 'Les décideurs ne prennent pas de décision OPTIMALE (information incomplète, temps limité, capacité cognitive limitée) mais une décision \'satisfaisante\' compte tenu du contexte et de l\'information disponible.'
+      },
+      {
+        id: 'si-decisions-q3',
+        question: 'Quels sont les avantages du PGI (ERP) ?',
+        reponse: 'Unification de toutes les informations de l\'entreprise, centralisation des données en temps réel, partage automatisé entre services, disponibilité de l\'information, fluidification des processus, réduction des erreurs de saisie.'
+      },
+      {
+        id: 'si-decisions-q4',
+        question: 'Qu\'est-ce que l\'asymétrie d\'information ?',
+        reponse: 'Situation où l\'une des parties dispose d\'informations que l\'autre n\'a pas. Ex: NOVEFI connaît mieux ses services que le client PHARMA. Cela crée un risque de comportement opportuniste → obligation de conseil du prestataire.'
+      },
+      {
+        id: 'si-decisions-q5',
+        question: 'Pourquoi le SI est-il stratégique pour Agricoopia ?',
+        reponse: 'Agricoopia doit intégrer la plateforme Ferme.agri et gérer 10 000 adhérents. Un SI performant = avantage concurrentiel (meilleure analyse des données agricoles, coordination entre sites, support aux décisions).'
+      },
+      {
+        id: 'si-decisions-q6',
+        question: 'Quelle est la différence entre une décision stratégique et opérationnelle ?',
+        reponse: 'Stratégique : long terme, irréversible, concerne l\'avenir de l\'entreprise (racheter une entreprise, changer de marché). Opérationnelle : court terme, reversible, quotidienne (gérer le stock, traiter une commande).'
+      }
+    ]
+  },
+  {
+    id: 'auteurs-management',
+    tier: 1,
+    matiere: 'management',
+    titre: 'Les auteurs clés à connaître',
+    sousTitre: 'Schumpeter · Porter · Maslow · Herzberg · Freeman · Mintzberg · Penrose · Simon',
+    cours: 'Citer le bon auteur à la bonne notion est ce qui sépare une note de 8 d\'une note de 12 à l\'examen CEJM. Le correcteur attend des références théoriques précises rattachées aux faits du sujet. Les auteurs incontournables couvrent trois champs : économie (Schumpeter, Porter), management (Mintzberg, Chandler, Ansoff, Blake & Mouton, Likert, Simon, Norton & Kaplan) et ressources humaines (Maslow, Herzberg, Vroom, Freeman). Chaque auteur a une théorie centrale à mémoriser avec ses mots-clés.',
+    pointsCles: [
+      'Schumpeter : entrepreneur innovateur, destruction créatrice, 5 types d\'innovation',
+      'Porter : 5 forces, avantage concurrentiel (domination coûts / différenciation / focalisation), chaîne de valeur',
+      'Maslow : pyramide 5 besoins (physio → sécurité → appartenance → estime → réalisation)',
+      'Herzberg : facteurs d\'hygiène (évitent insatisfaction) vs facteurs moteurs (créent motivation)',
+      'Freeman : parties prenantes 1er rang (directe) vs 2nd rang (indirecte)',
+      'Mintzberg : 6 mécanismes de coordination, stratégie délibérée vs émergente',
+      'Chandler : la structure suit la stratégie',
+      'Simon : rationalité limitée — pas de décision optimale',
+      'Norton & Kaplan : tableau de bord prospectif — performance efficace + efficiente + pertinente'
+    ],
+    auteurs: [
+      { nom: 'Schumpeter', theorie: 'Destruction créatrice, entrepreneur innovateur, 5 types d\'innovation' },
+      { nom: 'Porter', theorie: '5 forces concurrentielles, avantage concurrentiel, chaîne de valeur, DAS' },
+      { nom: 'Freeman', theorie: 'Parties prenantes 1er rang (directe) vs 2nd rang (indirecte)' },
+      { nom: 'Maslow', theorie: 'Pyramide des besoins à 5 niveaux hiérarchisés' },
+      { nom: 'Herzberg', theorie: 'Théorie bi-factorielle : hygiène vs moteurs' },
+      { nom: 'Mintzberg', theorie: '6 mécanismes de coordination, stratégie délibérée/émergente' },
+      { nom: 'Chandler', theorie: 'La structure s\'adapte à la stratégie' },
+      { nom: 'Herbert Simon', theorie: 'Rationalité limitée' },
+      { nom: 'Ansoff', theorie: 'Stratégies globales (spéc./diversif.) + 3 niveaux de décision' },
+      { nom: 'Penrose', theorie: 'Ressources tangibles et intangibles = source d\'avantage concurrentiel' },
+      { nom: 'Vroom', theorie: 'Théorie des attentes : Motivation = Espérance × Instrumentalité × Valence' },
+      { nom: 'Norton & Kaplan', theorie: 'Tableau de bord prospectif : performance efficace, efficiente, pertinente' },
+      { nom: 'Drucker', theorie: 'Finalités économique et sociétale complémentaires' },
+      { nom: 'Crozier', theorie: 'Structures flexibles en réseau (contingence)' }
+    ],
+    sujetsRef: ['packitoo-2022', 'agricoopia-nc-2022', 'novefi-2023', 'idemia-nc-2023', 'ref-2024', 'purecontrol-s-2024', 'digim-2025', 'ovhcloud-nc-2025'],
+    cards: [
+      {
+        id: 'auteurs-management-q1',
+        question: 'Quel auteur citer pour la \'destruction créatrice\' et l\'entrepreneuriat ?',
+        reponse: 'Schumpeter. L\'entrepreneur innovateur est le moteur de la croissance économique. Les innovations détruisent les solutions existantes et créent de nouvelles entreprises (destruction créatrice).'
+      },
+      {
+        id: 'auteurs-management-q2',
+        question: 'Quel auteur citer pour les 5 forces concurrentielles ?',
+        reponse: 'Porter. Les 5 forces : intensité concurrentielle, pouvoir de négociation clients et fournisseurs, menace nouveaux entrants, menace produits substituts. Porter aussi pour l\'avantage concurrentiel (domination coûts / différenciation).'
+      },
+      {
+        id: 'auteurs-management-q3',
+        question: 'Quel auteur citer pour les parties prenantes ?',
+        reponse: 'Freeman. PP de 1er rang = influence directe (actionnaires, salariés, clients, fournisseurs). PP de 2nd rang = influence indirecte (État, ONG, syndicats).'
+      },
+      {
+        id: 'auteurs-management-q4',
+        question: 'Que dit Norton & Kaplan sur la performance ?',
+        reponse: 'Tableau de bord prospectif : la performance est EFFICACE (objectifs atteints) + EFFICIENTE (ressources minimisées) + PERTINENTE (objectifs alignés avec les moyens). 3 dimensions : économique, organisationnelle, sociale.'
+      },
+      {
+        id: 'auteurs-management-q5',
+        question: 'Quel auteur citer pour \'la structure suit la stratégie\' ?',
+        reponse: 'Chandler. Si l\'entreprise change de stratégie, elle doit adapter sa structure. La structure est au service de la stratégie, pas l\'inverse.'
+      },
+      {
+        id: 'auteurs-management-q6',
+        question: 'Que dit Drucker sur les finalités de l\'entreprise ?',
+        reponse: 'L\'entreprise a deux finalités complémentaires : économique (profit, pérennité, croissance) et sociétale/RSE (responsabilité envers les parties prenantes et l\'environnement). Elles se renforcent mutuellement.'
+      },
+      {
+        id: 'auteurs-management-q7',
+        question: 'Quelle est la théorie de Penrose sur les ressources ?',
+        reponse: 'L\'avantage concurrentiel durable repose sur les ressources UNIQUES de l\'entreprise : tangibles (humaines, financières, matérielles, informationnelles) et intangibles (marque, brevets, réputation, savoir-faire organisationnel).'
+      },
+      {
+        id: 'auteurs-management-q8',
+        question: 'Quel auteur citer pour la rationalité limitée ?',
+        reponse: 'Herbert Simon. Il n\'existe pas de décision optimale — les décideurs sont limités par l\'information incomplète, le temps et leurs capacités cognitives. Ils prennent une décision \'satisfaisante\', rationnellement limitée par le contexte.'
+      }
+    ]
   }
 ];
 
