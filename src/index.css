@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-eco: #C4622D;
+    --color-droit: #1E3A5F;
+    --color-management: #2D5A3D;
+    --color-cream: #FAF7F2;
+  }
+
+  * { box-sizing: border-box; }
+
+  html {
+    font-family: 'Inter', system-ui, sans-serif;
+    background-color: #FAF7F2;
+    color: #171717;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  body {
+    margin: 0;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3 { font-family: 'Playfair Display', Georgia, serif; }
+
+  #root { min-height: 100vh; }
+}
+
+@layer components {
+  .card {
+    @apply bg-white rounded-xl border border-neutral-100 shadow-sm;
+  }
+
+  .badge-eco {
+    @apply inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-eco-light text-eco-dark;
+  }
+
+  .badge-droit {
+    @apply inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-droit-light text-droit-dark;
+  }
+
+  .badge-management {
+    @apply inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-management-light text-management-dark;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center px-4 py-2 rounded-lg bg-eco text-white font-medium text-sm transition-all hover:bg-eco-dark active:scale-95 disabled:opacity-40;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center px-4 py-2 rounded-lg border border-neutral-200 bg-white text-neutral-700 font-medium text-sm transition-all hover:bg-neutral-50 active:scale-95;
+  }
+
+  .notion-card {
+    @apply card p-4 cursor-pointer transition-all hover:shadow-md hover:-translate-y-0.5;
+  }
+}
+
+@layer utilities {
+  .text-eco { color: var(--color-eco); }
+  .text-droit { color: var(--color-droit); }
+  .text-management { color: var(--color-management); }
+
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar { display: none; }
+
+  .flip-card { perspective: 1000px; }
+  .flip-card-inner {
+    transition: transform 0.4s ease;
+    transform-style: preserve-3d;
+  }
+  .flip-card-inner.flipped { transform: rotateY(180deg); }
+  .flip-card-front, .flip-card-back { backface-visibility: hidden; }
+  .flip-card-back { transform: rotateY(180deg); }
+}
