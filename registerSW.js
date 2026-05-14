@@ -1,0 +1,1 @@
+if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/CEJM-final/sw.js', { scope: '/CEJM-final/' })})}
