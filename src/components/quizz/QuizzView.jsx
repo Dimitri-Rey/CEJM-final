@@ -93,9 +93,17 @@ export default function QuizzView({ progress, navigate, tierFilter }) {
           >
             ← Abandonner
           </button>
-          <span className="text-sm text-neutral-500">
-            {cardIndex + 1} / {sessionCards.length}
-          </span>
+          <div className="text-right">
+            <span className="text-sm text-neutral-500">
+              {cardIndex + 1} / {sessionCards.length}
+            </span>
+            {mode === 'tier' && (
+              <p className="text-[11px] text-eco font-medium">Tier {tierFilter} uniquement</p>
+            )}
+            {mode === 'due' && (
+              <p className="text-[11px] text-neutral-400">Session du jour</p>
+            )}
+          </div>
         </div>
 
         {/* Progress bar */}
