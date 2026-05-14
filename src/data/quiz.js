@@ -947,6 +947,355 @@ const quiz = [
     explanation:
       "Risques de l'impartition : 1) DÉPENDANCE au prestataire (si Gestion+ fait défaut, Agricoopia est bloquée) 2) PERTE DE COMPÉTENCES internes (on ne sait plus faire ce qu'on a externalisé) 3) CONTRÔLE DIFFICILE (qualité, délais, confidentialité). Les investissements lourds et la complexité managériale (options A, C) sont des risques de l'INTÉGRATION verticale.",
   },
+
+  // ─────────────────────────────────────────────────────────
+  // TIER 2 — DROIT NUMÉRIQUE & CONTRATS (nouvelles notions)
+  // ─────────────────────────────────────────────────────────
+  {
+    id: 'qcm-056',
+    tier: 2,
+    matiere: 'droit',
+    notionId: 'droit-auteur-logiciel',
+    question: "Sur quel fondement juridique un logiciel est-il protégé en France ?",
+    options: [
+      "Le brevet d'invention, après dépôt à l'INPI",
+      "Le droit d'auteur (code de la propriété intellectuelle), dès la création sans dépôt",
+      "La marque déposée à l'EUIPO pour les logiciels commerciaux",
+      "Le droit sui generis, comme pour les bases de données",
+    ],
+    correct: 1,
+    explanation:
+      "Le logiciel est une œuvre de l'esprit protégée par le droit d'auteur (code de la propriété intellectuelle), sans nécessité de dépôt — la protection naît dès la création si l'œuvre a un caractère unique. Le brevet est exclu pour les logiciels. Le droit sui generis protège les bases de données (contenu), pas les logiciels.",
+  },
+  {
+    id: 'qcm-057',
+    tier: 2,
+    matiere: 'droit',
+    notionId: 'droit-auteur-logiciel',
+    question: "Un salarié développe un logiciel dans le cadre de son contrat de travail. Qui détient les droits patrimoniaux ?",
+    options: [
+      "Le salarié, car il est l'auteur et le droit d'auteur est inaliénable",
+      "L'employeur automatiquement, car le logiciel a été créé dans l'exercice des fonctions",
+      "Les deux, à parts égales de 50/50 selon la jurisprudence",
+      "L'État, car tout logiciel professionnel appartient au domaine public après publication",
+    ],
+    correct: 1,
+    explanation:
+      "Pour un logiciel créé dans le cadre du contrat de travail : les droits patrimoniaux appartiennent AUTOMATIQUEMENT à l'employeur. C'est une exception au droit commun (pour les autres œuvres, le salarié détient l'intégralité). Les droits moraux restent toutefois au salarié (droits perpétuels et inaliénables).",
+  },
+  {
+    id: 'qcm-058',
+    tier: 2,
+    matiere: 'droit',
+    notionId: 'droit-auteur-logiciel',
+    question: "Qu'est-ce que le cybersquatting ?",
+    options: [
+      "Une attaque informatique visant à saturer un serveur web",
+      "Le dépôt d'un nom de domaine très proche d'une marque existante, avec une faute de frappe",
+      "Le dépôt d'un nom de domaine identique à une marque pour profiter de sa notoriété",
+      "L'utilisation frauduleuse de données personnelles sur les réseaux sociaux",
+    ],
+    correct: 2,
+    explanation:
+      "Cybersquatting : dépôt d'un nom de domaine IDENTIQUE à une marque pour tirer profit de sa notoriété. ≠ Typosquatting (option B) : nom de domaine TRÈS PROCHE avec une légère différence (faute de frappe) pour tromper les internautes. Les deux constituent des atteintes sanctionnées par l'action en contrefaçon (pénale) et en concurrence déloyale (civile).",
+  },
+  {
+    id: 'qcm-059',
+    tier: 2,
+    matiere: 'droit',
+    notionId: 'contrats-numeriques',
+    question: "Quelle est la différence entre cloud computing et SaaS ?",
+    options: [
+      "Le cloud concerne uniquement les logiciels ; le SaaS concerne le stockage de données",
+      "Le cloud est le stockage de données via internet ; le SaaS est l'accès à des logiciels via internet",
+      "Le SaaS est réservé aux grandes entreprises ; le cloud est accessible à tous",
+      "Le cloud nécessite un abonnement mensuel ; le SaaS est gratuit pour les professionnels",
+    ],
+    correct: 1,
+    explanation:
+      "Cloud computing : stockage et accès aux données via internet sans disque dur local (ex. Google Drive, Dropbox). SaaS (Software as a Service) : accès à des logiciels depuis internet sans téléchargement ni installation (ex. Office 365, Salesforce). Le SaaS est une forme de cloud, mais centré sur les logiciels. Ni l'un ni l'autre n'est réservé à certaines tailles d'entreprise.",
+  },
+  {
+    id: 'qcm-060',
+    tier: 2,
+    matiere: 'droit',
+    notionId: 'contrats-numeriques',
+    question: "À quoi sert la clause de réversibilité dans un contrat informatique ?",
+    options: [
+      "Elle permet à l'entreprise de revenir à l'ancien système si le nouveau est défectueux",
+      "Elle garantit au client de récupérer ses données en cas de changement de prestataire",
+      "Elle oblige le prestataire à maintenir le logiciel pendant toute la durée du contrat",
+      "Elle limite la responsabilité du prestataire en cas de perte accidentelle de données",
+    ],
+    correct: 1,
+    explanation:
+      "La clause de réversibilité garantit au client la possibilité de récupérer l'ensemble de ses données si le contrat prend fin ou si l'entreprise change de prestataire. C'est une clause essentielle en cloud computing : sans elle, les données pourraient rester chez le prestataire ou être inaccessibles. Elle fait partie des 8 clauses spécifiques des contrats informatiques.",
+  },
+  {
+    id: 'qcm-061',
+    tier: 2,
+    matiere: 'droit',
+    notionId: 'contrat-electronique',
+    question: "Un e-commerçant B2C souhaite envoyer des newsletters promotionnelles à ses clients. Quelle règle s'applique ?",
+    options: [
+      "Opt-out : les clients peuvent se désabonner, accord implicite si lié à l'activité",
+      "Opt-in : il faut l'accord explicite préalable du client, avec possibilité de révocation",
+      "Aucune règle spécifique : l'envoi est libre dès lors que le client a déjà commandé",
+      "Double opt-in : deux confirmations obligatoires par e-mail avant tout envoi",
+    ],
+    correct: 1,
+    explanation:
+      "B2C = opt-in : l'accord EXPLICITE et PRÉALABLE de la personne physique est obligatoire. Cet accord est révocable à tout moment gratuitement. ≠ B2B = opt-out : accord implicite si l'envoi est en lien avec l'activité professionnelle du destinataire. L'option C est fausse : même si le client a commandé, l'accord pour les newsletters doit être distinct et explicite.",
+  },
+  {
+    id: 'qcm-062',
+    tier: 2,
+    matiere: 'droit',
+    notionId: 'contrat-electronique',
+    question: "Quel est le délai de rétractation légal pour un achat en ligne (B2C) et qui supporte les risques d'exécution ?",
+    options: [
+      "7 jours — le risque est partagé entre le vendeur et l'acheteur",
+      "14 jours — le vendeur est responsable de plein droit de l'exécution du contrat",
+      "30 jours — l'acheteur supporte les risques dès la confirmation de commande",
+      "21 jours — la responsabilité est limitée par les CGV du e-commerçant",
+    ],
+    correct: 1,
+    explanation:
+      "Le droit de rétractation B2C est de 14 jours (sans justification, avec formulaire fourni). Le e-vendeur est responsable de PLEIN DROIT de l'exécution du contrat électronique (livraison sous 30 jours max). Il ne peut pas s'exonérer par une clause abusive dans ses CGV. La responsabilité de plein droit signifie qu'aucune faute n'est à démontrer pour engager la responsabilité du vendeur.",
+  },
+  {
+    id: 'qcm-063',
+    tier: 2,
+    matiere: 'droit',
+    notionId: 'contrat-electronique',
+    question: "Quel type de signature électronique est le plus difficile à contester en justice ?",
+    options: [
+      "La signature simple (scan ou case à cocher)",
+      "La signature avancée (basée sur une clef publique x509)",
+      "La signature certifiée (basée sur un certificat électronique accrédité ANSSI/eiDAS)",
+      "Toutes les signatures électroniques ont la même valeur probante selon le règlement eiDAS",
+    ],
+    correct: 2,
+    explanation:
+      "La signature certifiée bénéficie d'une présomption de fiabilité : elle ne vaut que jusqu'à la preuve contraire APPORTÉE PAR CELUI QUI LA CONTESTE (charge de la preuve inversée). Les signatures simple et avancée doivent être prouvées par celui qui les a apposées. Condition : délivrée par un tiers de confiance accrédité par l'ANSSI, conforme au règlement eiDAS (EU) et au RGS (FR).",
+  },
+  {
+    id: 'qcm-064',
+    tier: 2,
+    matiere: 'droit',
+    notionId: 'avant-contrats-classification',
+    question: "Quelle est la différence entre une promesse unilatérale et une promesse synallagmatique ?",
+    options: [
+      "Dans la promesse unilatérale, les deux parties s'engagent ; dans la synallagmatique, une seule",
+      "Dans la promesse unilatérale, seul le promettant est engagé ; dans la synallagmatique, les deux le sont sous condition",
+      "La promesse unilatérale est toujours gratuite ; la synallagmatique est toujours onéreuse",
+      "La promesse unilatérale nécessite un acte notarié ; la synallagmatique est toujours verbale",
+    ],
+    correct: 1,
+    explanation:
+      "Promesse unilatérale : le PROMETTANT seul est engagé à conclure le contrat si le bénéficiaire accepte. Le bénéficiaire n'est pas engagé. Promesse synallagmatique : les DEUX parties s'engagent à conclure le contrat définitif si une condition indépendante de leur volonté se réalise (ex. obtention d'un crédit). Non-respect : responsabilité civile contractuelle dans les deux cas.",
+  },
+  {
+    id: 'qcm-065',
+    tier: 2,
+    matiere: 'droit',
+    notionId: 'avant-contrats-classification',
+    question: "Un contrat dans lequel la portée des obligations n'est pas connue car elle dépend d'un événement incertain est qualifié de :",
+    options: [
+      "Commutatif",
+      "Solennel",
+      "Unilatéral",
+      "Aléatoire",
+    ],
+    correct: 3,
+    explanation:
+      "Contrat ALÉATOIRE : la portée des obligations n'est pas connue lors de la conclusion car elle dépend d'un événement incertain (aléa) — ex. assurance (on ne sait pas si le sinistre surviendra), rente viagère, vente en viager. ≠ Commutatif : obligations déterminées et certaines dès la conclusion (ex. vente à prix fixe). C'est l'un des 7 critères de classification des contrats selon le Code civil.",
+  },
+  {
+    id: 'qcm-066',
+    tier: 2,
+    matiere: 'droit',
+    notionId: 'clauses-execution-contrat',
+    question: "Qu'est-ce qu'une clause abusive et quelle est sa sanction ?",
+    options: [
+      "Clause illégale qui annule l'intégralité du contrat dès sa découverte",
+      "Clause créant un déséquilibre significatif au détriment du consommateur — réputée non écrite",
+      "Clause qui limite abusivement la responsabilité du professionnel — sanction pénale uniquement",
+      "Clause réservée aux contrats B2B, sans sanction spécifique avant 2019",
+    ],
+    correct: 1,
+    explanation:
+      "Clause abusive : crée au détriment du consommateur (ou non-professionnel) un déséquilibre significatif entre les droits et obligations. Sanction : réputée NON ÉCRITE — le reste du contrat reste valable. Depuis 2019 : le code de commerce interdit aussi les clauses abusives B2B (sanction : responsabilité contractuelle). L'option A est fausse : la nullité ne touche que la clause, pas le contrat entier.",
+  },
+  {
+    id: 'qcm-067',
+    tier: 2,
+    matiere: 'droit',
+    notionId: 'clauses-execution-contrat',
+    question: "Dans quel cas la théorie de l'imprévision permet-elle à une partie de demander la renégociation du contrat ?",
+    options: [
+      "Quand le contrat devient moins rentable suite à une baisse des prix du marché",
+      "Quand des circonstances imprévisibles rendent l'exécution excessivement onéreuse pour une partie",
+      "Quand l'autre partie n'exécute pas ses obligations depuis plus de 3 mois",
+      "Quand le taux d'intérêt du crédit associé au contrat dépasse 5% au moment de l'exécution",
+    ],
+    correct: 1,
+    explanation:
+      "La théorie de l'imprévision (art. 1195 CC) s'applique si : des circonstances IMPRÉVISIBLES lors de la conclusion ont changé ET rendent l'exécution excessivement onéreuse pour une partie QUI N'EN AVAIT PAS ACCEPTÉ LE RISQUE. La simple baisse de rentabilité ne suffit pas. Si la renégociation échoue : rupture d'un commun accord ou saisine du juge qui peut réviser/résoudre le contrat.",
+  },
+  // ─────────────────────────────────────────────────────────
+  // TIER 2 — RGPD ÉTENDU (6 droits, DPO, accountability)
+  // ─────────────────────────────────────────────────────────
+  {
+    id: 'qcm-068',
+    tier: 2,
+    matiere: 'droit',
+    notionId: 'rgpd-donnees-sensibles',
+    question: "Quels sont les 6 droits reconnus aux personnes physiques par le RGPD ?",
+    options: [
+      "Accès, rectification, opposition, oubli, portabilité, limitation du traitement",
+      "Accès, suppression, modification, opposition, anonymisation, transfert",
+      "Consultation, effacement, correction, blocage, exportation, recours",
+      "Information, consentement, rectification, opposition, contrôle, sanction",
+    ],
+    correct: 0,
+    explanation:
+      "Les 6 droits RGPD : 1) Accès (consulter ses données) 2) Rectification (corriger des inexactitudes) 3) Opposition (s'opposer au traitement) 4) Oubli (demander la suppression) 5) Portabilité (récupérer ses données dans un format réutilisable pour les transférer) 6) Limitation du traitement (geler l'utilisation sans suppression). Ces droits sont exercés auprès de l'organisme responsable du traitement.",
+  },
+  {
+    id: 'qcm-069',
+    tier: 2,
+    matiere: 'droit',
+    notionId: 'rgpd-donnees-sensibles',
+    question: "Dans quels cas la désignation d'un DPO est-elle OBLIGATOIRE ?",
+    options: [
+      "Pour toute entreprise de plus de 250 salariés ou réalisant un CA supérieur à 10M€",
+      "Uniquement pour les entreprises traitant des données de santé ou biométriques",
+      "Pour tout organisme public et tout organisme traitant des données à grande échelle",
+      "Uniquement sur décision de la CNIL après un contrôle ou une plainte",
+    ],
+    correct: 2,
+    explanation:
+      "La désignation du DPO est OBLIGATOIRE dans 2 cas : (1) pour tout organisme public (État, collectivités, hôpitaux…) ; (2) pour tout organisme — public ou privé — effectuant des traitements à grande échelle de données personnelles (ex. bases de données clients massives, plateformes numériques). Elle est recommandée (mais non obligatoire) dans les autres cas. Le DPO conseille, informe et contrôle la conformité RGPD.",
+  },
+  {
+    id: 'qcm-070',
+    tier: 2,
+    matiere: 'droit',
+    notionId: 'rgpd-donnees-sensibles',
+    question: "Qu'est-ce que le 'privacy by design' dans le cadre de l'accountability RGPD ?",
+    options: [
+      "Le fait de rendre les données anonymes après leur collecte pour les protéger",
+      "L'intégration de la protection des données dès la conception du produit ou service",
+      "Le droit des utilisateurs à concevoir eux-mêmes leurs paramètres de confidentialité",
+      "L'obligation de faire certifier la sécurité du système d'information par un tiers",
+    ],
+    correct: 1,
+    explanation:
+      "Privacy by design : intégrer les considérations de protection des données dès la CONCEPTION du produit/service (pas une fois qu'il est développé). ≠ Privacy by default : protection maximale par défaut dès la collecte, sans intervention de l'utilisateur. Ces 2 concepts sont au cœur de l'accountability — l'obligation de DÉMONTRER sa conformité RGPD en amont, pas seulement de la respecter.",
+  },
+  // ─────────────────────────────────────────────────────────
+  // TIER 2 — MARCHÉ DU TRAVAIL GÉNÉRAL
+  // ─────────────────────────────────────────────────────────
+  {
+    id: 'qcm-071',
+    tier: 2,
+    matiere: 'eco',
+    notionId: 'marche-travail-general',
+    question: "Quelle est la différence entre chômage structurel et chômage frictionnel ?",
+    options: [
+      "Le chômage structurel est temporaire (entre deux emplois) ; le frictionnel est lié à des transformations durables",
+      "Le chômage structurel est lié à des transformations durables de l'économie ; le frictionnel est temporaire (mobilité normale)",
+      "Le chômage structurel touche uniquement les jeunes ; le frictionnel touche les seniors",
+      "Il n'y a pas de différence : les deux désignent l'absence d'emploi mesurée par le taux de chômage",
+    ],
+    correct: 1,
+    explanation:
+      "Chômage structurel : lié à des transformations DURABLES et profondes de l'économie — révolution technologique, désindustrialisation, inadéquation des qualifications. Il ne disparaît pas avec la croissance. Chômage frictionnel : TEMPORAIRE, lié au délai normal entre deux emplois lors de mobilités ou changements de poste. Il est inévitable mais court. Les politiques d'emploi ciblent surtout le chômage structurel (reconversion, formation).",
+  },
+  {
+    id: 'qcm-072',
+    tier: 2,
+    matiere: 'eco',
+    notionId: 'marche-travail-general',
+    question: "Quelle est la différence entre une politique de l'offre et une politique de la demande en matière d'emploi ?",
+    options: [
+      "Politique de l'offre : aider les demandeurs d'emploi à se former. Politique de la demande : soutenir les entreprises via des subventions",
+      "Politique de l'offre : améliorer la compétitivité des entreprises (baisse charges, flexibilité). Politique de la demande : augmenter la demande globale (aides, SMIC)",
+      "Politique de l'offre : augmenter la demande globale. Politique de la demande : réduire les charges patronales",
+      "Les deux politiques sont identiques : elles visent toutes deux à réduire le taux de chômage par des mesures budgétaires",
+    ],
+    correct: 1,
+    explanation:
+      "Politique de l'OFFRE : améliorer la compétitivité des entreprises pour les inciter à embaucher — baisse des prélèvements sociaux, flexibilité du marché du travail, soutien à l'investissement. Vise la création d'emplois côté entreprises. Politique de la DEMANDE : augmenter la demande globale pour soutenir l'activité — hausse des aides sociales, augmentation du SMIC, commande publique. Vise la consommation des ménages pour relancer la production et indirectement l'emploi.",
+  },
+  // ─────────────────────────────────────────────────────────
+  // TIER 2 — AVANT-CONTRATS & CLASSIFICATION (complément)
+  // ─────────────────────────────────────────────────────────
+  {
+    id: 'qcm-073',
+    tier: 2,
+    matiere: 'droit',
+    notionId: 'avant-contrats-classification',
+    question: "Qu'est-ce qu'un contrat d'adhésion et en quoi diffère-t-il du contrat de gré à gré ?",
+    options: [
+      "Contrat d'adhésion : conclu par une association. Contrat de gré à gré : conclu entre particuliers",
+      "Contrat d'adhésion : conditions prédéterminées par une partie, l'autre accepte en bloc. Contrat de gré à gré : stipulations librement négociées",
+      "Contrat d'adhésion : nécessite obligatoirement un écrit. Contrat de gré à gré : peut être verbal",
+      "Contrat d'adhésion : réservé aux professionnels. Contrat de gré à gré : réservé aux particuliers",
+    ],
+    correct: 1,
+    explanation:
+      "Contrat d'adhésion : les conditions générales sont soustraites à la négociation et prédéterminées unilatéralement par l'une des parties — l'autre accepte ou refuse en bloc (ex. abonnement téléphonique, contrat de transport, CGU d'une plateforme). Contrat de gré à gré : les stipulations sont librement négociées entre les parties (ex. vente d'un véhicule d'occasion, contrat de prestation de services sur mesure). Les clauses abusives sont particulièrement surveillées dans les contrats d'adhésion.",
+  },
+  {
+    id: 'qcm-074',
+    tier: 2,
+    matiere: 'droit',
+    notionId: 'clauses-execution-contrat',
+    question: "Qu'est-ce qu'une clause de réserve de propriété et dans quel cas est-elle utile ?",
+    options: [
+      "Clause permettant au vendeur de conserver l'usage du bien vendu pendant une durée déterminée",
+      "Clause permettant au vendeur de conserver la propriété du bien vendu jusqu'au complet paiement",
+      "Clause interdisant à l'acheteur de revendre le bien à un tiers pendant une période déterminée",
+      "Clause obligeant l'acheteur à assurer le bien dès la livraison même sans paiement complet",
+    ],
+    correct: 1,
+    explanation:
+      "La clause de réserve de propriété permet au vendeur (créancier) de conserver la propriété du bien jusqu'à ce que l'acheteur ait payé l'intégralité du prix. Utilité : si l'acheteur fait faillite avant d'avoir tout payé, le vendeur peut récupérer le bien plutôt que de se retrouver simple créancier chirographaire. C'est une des 7 clauses particulières des contrats B2B et une garantie courante dans les ventes de matériel informatique ou équipements.",
+  },
+  {
+    id: 'qcm-075',
+    tier: 2,
+    matiere: 'droit',
+    notionId: 'contrats-numeriques',
+    question: "Quels sont les 5 types de risques liés au Système d'Information d'une entreprise ?",
+    options: [
+      "Risques techniques, humains, financiers, stratégiques, commerciaux",
+      "Risques de sécurité, opérationnels, sociaux, juridiques, financiers",
+      "Risques matériels, logiciels, humains, réglementaires, concurrentiels",
+      "Risques de cybersécurité, de conformité, de performance, de fiabilité, de disponibilité",
+    ],
+    correct: 1,
+    explanation:
+      "Les 5 risques liés au SI selon le programme BTS SIO : 1) Risques de SÉCURITÉ (cyberattaque, ransomware) 2) Risques OPÉRATIONNELS (défaillance et obsolescence des logiciels) 3) Risques SOCIAUX (atteintes aux salariés liées à l'usage de l'informatique) 4) Risques JURIDIQUES (responsabilité civile, pénale — RGPD, contrats) 5) Risques FINANCIERS (coûts de remédiation, pertes d'exploitation). Ces risques justifient la mise en place d'une politique de sécurité du SI.",
+  },
+  {
+    id: 'qcm-076',
+    tier: 2,
+    matiere: 'droit',
+    notionId: 'droit-auteur-logiciel',
+    question: "Quelle est la durée de protection du droit d'auteur sur un logiciel créé par une personne morale (entreprise) ?",
+    options: [
+      "20 ans à compter du dépôt à l'INPI, renouvelable une fois",
+      "70 ans à compter du décès de l'auteur principal du logiciel",
+      "70 ans à compter de la date à laquelle le logiciel a été rendu public",
+      "15 ans renouvelables à chaque mise à jour substantielle du logiciel",
+    ],
+    correct: 2,
+    explanation:
+      "Pour une personne MORALE (entreprise, société), la durée des droits patrimoniaux est de 70 ans à compter de la date à laquelle le logiciel a été rendu public. ≠ Personne physique : vie de l'auteur + 70 années civiles après son décès. Les 15 ans renouvelables s'appliquent au droit sui generis des bases de données. Les 20 ans = durée d'un brevet (mais les logiciels sont exclus du brevet).",
+  },
 ];
 
 export default quiz;

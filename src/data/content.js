@@ -1254,51 +1254,65 @@ const notions = [
 
   {
     id: 'rgpd-donnees-sensibles',
-    tier: 3,
+    tier: 2,
     matiere: 'droit',
-    titre: 'RGPD & données sensibles',
-    sousTitre: 'Données biométriques · Obligations RGPD · CNIL',
-    cours: 'Le RGPD (Règlement Général sur la Protection des Données, 2018) encadre le traitement des données personnelles dans l\'UE. Les données sensibles (origine raciale ou ethnique, opinions politiques, données biométriques, données de santé, vie sexuelle) font l\'objet d\'une protection renforcée : leur traitement est interdit par principe, sauf exceptions strictes. Le non-respect est sanctionné par la CNIL.',
+    titre: 'RGPD & protection des données personnelles',
+    sousTitre: '5 obligations, 6 droits des personnes, DPO, CNIL, accountability, données sensibles',
+    cours: 'Le RGPD (Règlement Général sur la Protection des Données — en vigueur depuis mai 2018) encadre le traitement des données personnelles de toute personne physique résidant dans l\'UE, par toute organisation (y compris hors UE si elle traite des données de résidents européens). Donnée personnelle : information permettant d\'identifier directement ou indirectement une personne physique. Donnée sensible : information révélant l\'origine raciale/ethnique, opinions politiques, convictions religieuses, appartenance syndicale, données biométriques, données de santé, vie sexuelle ou orientation sexuelle — traitement interdit par principe sauf exceptions (consentement exprès, sauvegarde de la vie humaine, intérêt public). Les 5 obligations principales des entreprises selon le RGPD : (1) sécurité et confidentialité des données ; (2) information des personnes en cas de demande ; (3) exploitation des données en cohérence avec l\'objectif du fichier ; (4) durée de conservation raisonnable selon l\'objectif ; (5) recueillir le consentement de la personne dont les données sont collectées. Le principe d\'accountability (responsabilisation) : les entreprises doivent démontrer leur conformité RGPD via des mécanismes internes. Deux concepts : privacy by design (intégrer la protection dès la conception du produit/service) et privacy by default (protection maximale par défaut sans intervention de l\'utilisateur). Les 6 droits reconnus aux personnes physiques : (1) droit d\'accès, (2) droit de rectification, (3) droit d\'opposition, (4) droit à l\'oubli, (5) droit à la portabilité, (6) droit à la limitation du traitement. Le DPO (Data Protection Officer) conseille et accompagne l\'organisme dans sa conformité RGPD. Sa désignation est obligatoire si l\'organisme est public ou traite des données à grande échelle. La CNIL (Commission Nationale de l\'Informatique et des Libertés) est l\'autorité de contrôle française. Sanctions : amende administrative jusqu\'à 4% du CA mondial ou 20M€ (la plus haute des deux) ; sanction pénale : 5 ans d\'emprisonnement + 300 000€ d\'amende. Obligations RGPD pour les employeurs : (1) respecter les principes RGPD pour les données salariés ; (2) minimiser la collecte ; (3) sécuriser ; (4) permettre l\'exercice des droits. Contrôle des outils numériques professionnels : encadré par chartes numériques (obligation CSE), l\'employeur peut contrôler les mails pro sauf si identifiés "personnel".',
     pointsCles: [
-      'Données sensibles : biométriques, santé, origine raciale/ethnique, opinions politiques, vie sexuelle, appartenance syndicale',
-      'Traitement interdit par principe sauf : consentement exprès (libre, spécifique, informé), nécessité vitale, intérêt public autorisé par la CNIL',
-      'Obligations RGPD : finalité déterminée, minimisation, licéité/loyauté/transparence, sécurité renforcée',
-      'CNIL : mise en demeure puis sanction pécuniaire (jusqu\'à 4% du CA mondial ou 20M€)',
-      'IDEMIA 2023 : données biométriques (empreintes, reconnaissance faciale) = données sensibles → cadre RGPD strict',
-      'Surveillance des salariés avec données biométriques : interdit sans autorisation CNIL préalable'
+      'RGPD 2018 : s\'applique à toute organisation traitant des données de résidents européens, même hors UE',
+      'Donnée sensible (traitement interdit par principe) : biométriques, santé, origine, opinions politiques, vie sexuelle, syndicale',
+      '5 obligations RGPD : sécurité, information sur demande, cohérence finalité, conservation limitée, consentement',
+      'Accountability : obligation de DÉMONTRER sa conformité — privacy by design + privacy by default',
+      '6 droits des personnes : accès, rectification, opposition, oubli, portabilité, limitation du traitement',
+      'DPO : conseille + accompagne la conformité — désignation OBLIGATOIRE (organisme public ou grande échelle de DP)',
+      'CNIL : autorité de contrôle — sanction administrative 4% CA mondial ou 20M€ ; pénale 5 ans + 300 000€',
+      '4 obligations employeurs : principes RGPD salariés, minimisation, sécurisation, exercice des droits',
+      'Contrôle outils numériques : chartes (CSE obligatoire) — mail pro contrôlable sauf identifié "personnel"',
+      'Données biométriques = données sensibles → interdit sans autorisation CNIL (IDEMIA 2023)'
     ],
     auteurs: [],
-    sujetsRef: ['novefi-2023', 'idemia-nc-2023'],
+    sujetsRef: ['novefi-2023', 'idemia-nc-2023', 'purecontrol-s-2024', 'digim-2025', 'ovhcloud-nc-2025'],
     cards: [
       {
         id: 'rgpd-donnees-sensibles-q1',
-        question: 'Qu\'est-ce qu\'une donnée sensible selon le RGPD ?',
-        reponse: 'Données révélant l\'origine raciale/ethnique, opinions politiques, convictions religieuses, appartenance syndicale, données biométriques, données de santé, données sur la vie sexuelle ou l\'orientation sexuelle.'
+        question: 'Qu\'est-ce qu\'une donnée personnelle ? Qu\'est-ce qu\'une donnée sensible ?',
+        reponse: 'Donnée personnelle : information permettant d\'identifier directement ou indirectement une personne physique. Donnée sensible : révèle l\'origine raciale/ethnique, opinions politiques, convictions religieuses, appartenance syndicale, données biométriques, données de santé, vie sexuelle. Traitement des données sensibles : INTERDIT par principe sauf exceptions (consentement exprès, sauvegarde vie humaine, intérêt public).'
       },
       {
         id: 'rgpd-donnees-sensibles-q2',
-        question: 'Quel est le principe pour les données sensibles ?',
-        reponse: 'Leur traitement est INTERDIT par principe. Des exceptions permettent le traitement : consentement exprès de la personne, sauvegarde de la vie humaine, intérêt public autorisé par la CNIL.'
+        question: 'Quelles sont les 5 obligations principales des entreprises selon le RGPD ?',
+        reponse: '1. Sécurité et confidentialité des données 2. Information des personnes en cas de demande 3. Exploitation des données en cohérence avec l\'objectif du fichier 4. Durée de conservation raisonnable en fonction de l\'objectif 5. Recueillir le consentement de la personne dont les données sont collectées'
       },
       {
         id: 'rgpd-donnees-sensibles-q3',
-        question: 'Quelles sont les obligations RGPD pour tout traitement de données ?',
-        reponse: 'Finalité déterminée et limitée, minimisation (collecter uniquement ce qui est nécessaire), licéité/loyauté/transparence, sécurité renforcée, durée de conservation limitée.'
+        question: 'Quels sont les 6 droits reconnus aux personnes physiques par le RGPD ?',
+        reponse: '1. Droit d\'accès (consulter ses données) 2. Droit de rectification (corriger des données inexactes) 3. Droit d\'opposition (s\'opposer au traitement) 4. Droit à l\'oubli (demander la suppression) 5. Droit à la portabilité (récupérer ses données dans un format réutilisable) 6. Droit à la limitation du traitement (geler l\'utilisation)'
       },
       {
         id: 'rgpd-donnees-sensibles-q4',
-        question: 'Quel est le rôle de la CNIL ?',
-        reponse: 'La CNIL contrôle le respect du RGPD en France. Elle peut : émettre des mises en demeure, prononcer des sanctions (jusqu\'à 4% du CA mondial ou 20M€), interdire les traitements illicites.'
+        question: 'Qu\'est-ce que l\'accountability ? Quels sont les 2 concepts associés ?',
+        reponse: 'L\'accountability est l\'obligation pour les entreprises de DÉMONTRER leur conformité RGPD via des mécanismes et procédures internes. 2 concepts : Privacy by design (intégrer la protection des données dès la conception du produit/service) et Privacy by default (protection maximale par défaut dès la collecte, sans intervention de l\'utilisateur).'
       },
       {
         id: 'rgpd-donnees-sensibles-q5',
-        question: 'Pourquoi l\'entreprise MASTEL ne peut-elle pas utiliser les données MorphoWave pour sanctionner un salarié ?',
-        reponse: 'Les données biométriques sont des données sensibles. Le dispositif doit être déclaré à la CNIL et avoir une finalité déclarée. Si les salariés n\'ont pas été informés, les données sont illicitement obtenues → preuve irrecevable.'
+        question: 'Qu\'est-ce que le DPO et dans quels cas sa désignation est-elle obligatoire ?',
+        reponse: 'DPO (Data Protection Officer) : conseille et accompagne l\'organisme dans sa conformité RGPD. Désignation OBLIGATOIRE si : (1) organisme public, ou (2) traitement à grande échelle de données personnelles. L\'identité du DPO doit être communiquée (coordonnées publiées). Rôle : conseiller, informer, contrôler la conformité.'
       },
       {
         id: 'rgpd-donnees-sensibles-q6',
-        question: 'Qu\'est-ce que le consentement exprès au sens du RGPD ?',
-        reponse: 'Un consentement libre (sans pression), spécifique (pour un traitement précis), informé (la personne sait ce qu\'elle accepte) et non équivoque (démarche active — pas une case pré-cochée).'
+        question: 'Quelles sont les sanctions en cas de violation du RGPD ?',
+        reponse: 'Sanction administrative (CNIL) : amende jusqu\'à 4% du CA mondial OU 20 millions d\'euros (la plus haute des deux). Sanctions pénales : 5 ans d\'emprisonnement + 300 000€ d\'amende (pour atteintes aux articles 226-16 à 226-24 du Code pénal). La CNIL peut aussi émettre des mises en demeure et interdire les traitements illicites.'
+      },
+      {
+        id: 'rgpd-donnees-sensibles-q7',
+        question: 'Quelles sont les 4 obligations RGPD de l\'employeur envers ses salariés ?',
+        reponse: '1. Respecter les principes RGPD concernant le traitement des données relatives aux salariés 2. Minimiser la collecte de données personnelles 3. Sécuriser les données collectées 4. Permettre l\'exercice des droits issus du RGPD (accès, rectification, opposition, etc.).'
+      },
+      {
+        id: 'rgpd-donnees-sensibles-q8',
+        question: 'Un employeur peut-il contrôler les emails envoyés depuis la messagerie professionnelle d\'un salarié ?',
+        reponse: 'Oui, si le mail est sur la messagerie professionnelle, l\'employeur peut le contrôler SAUF si l\'e-mail est identifié comme "personnel" par le salarié (objet ou dossier "perso" ou "personnel"). Même raisonnement pour les fichiers informatiques. Toute mise en place d\'un mécanisme de contrôle nécessite l\'avis préalable du CSE et une information individuelle/collective des salariés.'
       }
     ]
   },
@@ -1871,7 +1885,8 @@ const notions = [
       { nom: 'Vroom', theorie: 'Théorie des attentes : Motivation = Espérance × Instrumentalité × Valence' },
       { nom: 'Norton & Kaplan', theorie: 'Tableau de bord prospectif : performance efficace, efficiente, pertinente' },
       { nom: 'Drucker', theorie: 'Finalités économique et sociétale complémentaires' },
-      { nom: 'Crozier', theorie: 'Structures flexibles en réseau (contingence)' }
+      { nom: 'Crozier', theorie: 'Structures flexibles en réseau (contingence)' },
+      { nom: 'Hammer & Champy', theorie: 'BPR — Business Process Reengineering : restructuration autour des processus clés' }
     ],
     sujetsRef: ['packitoo-2022', 'agricoopia-nc-2022', 'novefi-2023', 'idemia-nc-2023', 'ref-2024', 'purecontrol-s-2024', 'digim-2025', 'ovhcloud-nc-2025'],
     cards: [
@@ -1914,6 +1929,341 @@ const notions = [
         id: 'auteurs-management-q8',
         question: 'Quel auteur citer pour la rationalité limitée ?',
         reponse: 'Herbert Simon. Il n\'existe pas de décision optimale — les décideurs sont limités par l\'information incomplète, le temps et leurs capacités cognitives. Ils prennent une décision \'satisfaisante\', rationnellement limitée par le contexte.'
+      }
+    ]
+  },
+
+  // ─────────────────────────────────────────────
+  // NOTIONS BTS SIO — THÈME 4 & 5 (BTS-5.pdf)
+  // ─────────────────────────────────────────────
+
+  {
+    id: 'marche-travail-general',
+    tier: 2,
+    matiere: 'eco',
+    titre: 'Le marché du travail & politiques de l\'emploi',
+    sousTitre: 'Population active, chômage structurel/frictionnel, SMIC, politiques de l\'emploi',
+    cours: 'Le marché du travail est le lieu où se rencontrent l\'offre (les salariés) et la demande (les entreprises) de travail en vue d\'échanger une force de travail contre un salaire. La population active est l\'ensemble des personnes occupant un emploi (salarié ou non) — population active occupée — et de ceux recherchant activement un emploi (chômeurs) — population active inoccupée. Le taux d\'activité = nombre de personnes actives (occupées + inoccupées) / population correspondante (15-64 ans). Le taux d\'emploi = nombre de personnes actives occupées / population correspondante. Le taux de chômage = chômeurs / population active. La fixation du salaire repose sur la loi de l\'offre et de la demande, avec un minimum imposé par la loi : le SMIC (Salaire Minimum Interprofessionnel de Croissance). Déterminants de l\'offre de travail (côté salarié) : le salaire, les conditions de travail, le niveau de qualification, le taux d\'activité, l\'accès à la formation. Déterminants de la demande de travail (côté entreprise) : le niveau de production et la conjoncture, le prix des facteurs de production, la structure de la combinaison productive. La segmentation du marché : le marché du travail est composé de plusieurs sous-marchés ayant leur propre mode de fonctionnement. Les 2 types de chômage : chômage structurel (lié à des transformations durables de l\'économie — évolution technologique, désindustrialisation) et chômage frictionnel (lié au délai entre deux emplois — mobilité normale). Politiques de l\'emploi : politiques de l\'offre (améliorer la compétitivité des entreprises — baisse des prélèvements, flexibilité du marché) et politiques de la demande (augmenter la demande globale — aides sociales, hausse du SMIC).',
+    pointsCles: [
+      'Population active = actifs occupés (emploi) + actifs inoccupés (chômeurs en recherche active)',
+      'Taux d\'activité = actifs (occupés + inoccupés) / population 15-64 ans',
+      'Taux d\'emploi = actifs occupés / population 15-64 ans',
+      'SMIC : salaire minimum imposé par la loi — plancher de la fixation du salaire par le marché',
+      '5 déterminants offre travail : salaire, conditions, qualification, taux d\'activité, formation',
+      '3 déterminants demande travail : conjoncture, prix des facteurs de production, combinaison productive',
+      'Chômage structurel : transformations durables de l\'économie (techno, désindustrialisation)',
+      'Chômage frictionnel : délai entre deux emplois — mobilité normale et temporaire',
+      'Politique de l\'offre : compétitivité entreprises (baisse charges, flexibilité) — vise l\'investissement et l\'emploi',
+      'Politique de la demande : augmenter la demande globale (aides, SMIC) — vise la consommation'
+    ],
+    auteurs: [],
+    sujetsRef: ['packitoo-2022', 'novefi-2023', 'ref-2024', 'digim-2025'],
+    cards: [
+      {
+        id: 'marche-travail-general-q1',
+        question: 'Quelle est la différence entre population active occupée et population active inoccupée ?',
+        reponse: 'Population active occupée : ensemble des personnes ayant un emploi (salarié ou non). Population active inoccupée : ensemble des chômeurs recherchant activement un emploi. La population active = occupée + inoccupée. À ne pas confondre avec la population inactive (étudiants, retraités, personnes au foyer qui ne cherchent pas d\'emploi).'
+      },
+      {
+        id: 'marche-travail-general-q2',
+        question: 'Si le taux d\'activité augmente plus vite que le taux d\'emploi, que se passe-t-il au niveau du chômage ?',
+        reponse: 'Le chômage augmente automatiquement. En effet, si plus de personnes entrent sur le marché du travail (hausse du taux d\'activité) mais que les emplois créés ne suivent pas au même rythme (taux d\'emploi croît moins vite), la différence se retrouve dans le chômage. Inversement, si le taux d\'emploi augmente plus vite que le taux d\'activité → le chômage baisse.'
+      },
+      {
+        id: 'marche-travail-general-q3',
+        question: 'Quelle est la différence entre chômage structurel et chômage frictionnel ? Exemples.',
+        reponse: 'Chômage structurel : lié à des transformations durables et profondes de l\'économie (révolution technologique, désindustrialisation, inadéquation des qualifications). Il ne disparaît pas avec la croissance. Ex. : emplois supprimés par l\'automatisation. Chômage frictionnel : délai normal entre deux emplois lors de changements de poste. Il est temporaire et inévitable. Ex. : ingénieur qui cherche un nouvel emploi après une démission.'
+      },
+      {
+        id: 'marche-travail-general-q4',
+        question: 'Quels sont les 5 déterminants de l\'offre de travail ?',
+        reponse: '1. Le salaire (plus il est élevé, plus l\'offre est importante) 2. Les conditions de travail (sécurité, qualité de vie au travail) 3. Le niveau de qualification (plus les qualifications sont élevées, plus l\'offre est spécialisée) 4. Le taux d\'activité (proportion de la population en âge de travailler sur le marché) 5. L\'accès à la formation (permet d\'adapter les compétences aux besoins)'
+      },
+      {
+        id: 'marche-travail-general-q5',
+        question: 'Qu\'est-ce que le SMIC et quel est son rôle sur le marché du travail ?',
+        reponse: 'SMIC (Salaire Minimum Interprofessionnel de Croissance) : salaire horaire minimum imposé par la loi, en dessous duquel aucun employeur ne peut rémunérer un salarié. Rôle : plancher de la fixation du salaire par le marché — protège les travailleurs contre les salaires trop bas. Le salaire d\'équilibre est déterminé par l\'offre et la demande mais ne peut descendre sous le SMIC.'
+      },
+      {
+        id: 'marche-travail-general-q6',
+        question: 'Quelle est la différence entre politique de l\'offre et politique de la demande en matière d\'emploi ?',
+        reponse: 'Politique de l\'offre : améliorer la compétitivité des entreprises pour les inciter à embaucher — baisse des prélèvements sociaux, flexibilité du marché du travail. Vise l\'investissement privé et l\'emploi. Politique de la demande : augmenter la demande globale pour soutenir la production et l\'emploi — augmentation des aides sociales, hausse du SMIC, commande publique. Vise la consommation des ménages.'
+      }
+    ]
+  },
+
+  {
+    id: 'droit-auteur-logiciel',
+    tier: 2,
+    matiere: 'droit',
+    titre: 'Protection du logiciel & bases de données',
+    sousTitre: 'Droit d\'auteur, droits moraux/patrimoniaux, droit sui generis BD, nom de domaine',
+    cours: 'Le logiciel est une œuvre de l\'esprit protégée par le droit d\'auteur (code de la propriété intellectuelle), sans nécessité de dépôt dès sa création si l\'œuvre a un caractère unique révélant la personnalité de l\'auteur. La protection comprend deux familles de droits. Les droits moraux (4 composantes : divulgation, paternité, intégrité, retrait — le droit de retrait est exclu pour les logiciels) sont perpétuels, inaliénables et imprescriptibles. Les droits patrimoniaux (représentation + reproduction) sont cessibles et durent vie de l\'auteur + 70 ans civiles ; pour une personne morale : 70 ans depuis la mise au public. Cas particulier employeur/salarié : hors logiciel, le droit d\'auteur appartient intégralement au salarié (les droits patrimoniaux peuvent être cédés à l\'employeur par clause contractuelle). Pour un logiciel créé dans le cadre du contrat de travail : les droits moraux restent au salarié mais les droits patrimoniaux appartiennent automatiquement à l\'employeur (les droits patrimoniaux peuvent être transférés au salarié par clause). La base de données bénéficie d\'une double protection : par le droit d\'auteur pour son architecture (si originale) et par le droit sui generis des producteurs pour son contenu si l\'investissement est substantiel — durée 15 ans renouvelables à chaque investissement substantiel. Interdiction de toute extraction substantielle ou systématique sans accord du producteur. Le nom de domaine se réserve auprès d\'un registrar accrédité selon la règle du 1er arrivé 1er servi (AFNIC pour .fr et outre-mer ; EURID pour .eu ; ICANN pour .com, .net, .org) — durée 1 an renouvelable. Deux atteintes principales : le cybersquatting (dépôt d\'un nom identique à une marque pour profiter de sa notoriété) et le typosquatting (nom très proche pour tromper les internautes). Sanctions : action en contrefaçon (pénale) + action en concurrence déloyale (civile extracontractuelle).',
+    pointsCles: [
+      'Logiciel = oeuvre de l\'esprit → droit d\'auteur sans dépôt, dès création si caractère unique',
+      '4 droits moraux : divulgation, paternité, intégrité, retrait (droit de retrait exclu pour logiciel)',
+      'Droits moraux : perpétuels, inaliénables, imprescriptibles',
+      'Droits patrimoniaux (représentation + reproduction) : cessibles — durée vie + 70 ans (PP) / 70 ans depuis mise public (PM)',
+      'Logiciel créé par salarié : droits moraux → salarié ; droits patrimoniaux → employeur automatiquement',
+      'Base de données : double protection — droit auteur (architecture) + droit sui generis (contenu, 15 ans renouvelables)',
+      'Nom de domaine : AFNIC (.fr), EURID (.eu), ICANN (.com/.net/.org) — règle 1er arrivé 1er servi, 1 an renouvelable',
+      'Cybersquatting : nom identique à une marque — Typosquatting : nom très proche pour tromper',
+      'Sanction : contrefaçon (pénale 300 000€ + 3 ans) + concurrence déloyale (civile extracontractuelle = D&I)'
+    ],
+    auteurs: [],
+    sujetsRef: ['novefi-2023', 'purecontrol-s-2024', 'digim-2025', 'ovhcloud-nc-2025'],
+    cards: [
+      {
+        id: 'droit-auteur-logiciel-q1',
+        question: 'Sur quel fondement un logiciel est-il protégé ? Faut-il effectuer un dépôt ?',
+        reponse: 'Le logiciel est protégé par le droit d\'auteur (code de la propriété intellectuelle). Pas besoin de dépôt : la protection naît dès la création si l\'oeuvre a un caractère unique révélant la personnalité de l\'auteur. Exception : pour le brevet, un dépôt est nécessaire — mais les logiciels sont exclus du brevet.'
+      },
+      {
+        id: 'droit-auteur-logiciel-q2',
+        question: 'Quels sont les 4 droits moraux du droit d\'auteur ? Lequel est exclu pour les logiciels ?',
+        reponse: '1. Divulgation (décider si l\'oeuvre est publiée) 2. Paternité (être reconnu comme auteur) 3. Intégrité (s\'opposer aux modifications préjudiciables à l\'honneur ou réputation) 4. Retrait (cesser l\'exploitation). Le droit de retrait est exclu pour les logiciels. Les droits moraux sont perpétuels, inaliénables et imprescriptibles.'
+      },
+      {
+        id: 'droit-auteur-logiciel-q3',
+        question: 'Quelle est la durée des droits patrimoniaux d\'auteur selon que l\'auteur est une PP ou une PM ?',
+        reponse: 'Personne physique : vie de l\'auteur + 70 années civiles après son décès. Personne morale : 70 ans à compter de la date à laquelle l\'oeuvre (ou le logiciel) a été rendu public. Les droits patrimoniaux (représentation + reproduction) sont cessibles — ils peuvent être transférés à l\'employeur.'
+      },
+      {
+        id: 'droit-auteur-logiciel-q4',
+        question: 'Qui détient les droits d\'un logiciel créé par un salarié dans le cadre de son contrat de travail ?',
+        reponse: 'Les droits moraux restent intégralement au salarié. Les droits patrimoniaux appartiennent automatiquement à l\'employeur (dès lors que le logiciel est créé dans le cadre du contrat de travail). Une clause peut transférer les droits patrimoniaux au salarié. ≠ Pour une oeuvre classique (non logiciel) : le droit d\'auteur appartient intégralement au salarié.'
+      },
+      {
+        id: 'droit-auteur-logiciel-q5',
+        question: 'En quoi consiste la double protection d\'une base de données ?',
+        reponse: '1. Droit d\'auteur : protège l\'architecture/structure de la base si elle est originale (sans dépôt). 2. Droit sui generis des producteurs : protège le contenu si l\'investissement (humain, financier, technique) est substantiel — durée 15 ans renouvelables à chaque investissement substantiel. Interdiction de toute extraction substantielle sans accord du producteur.'
+      },
+      {
+        id: 'droit-auteur-logiciel-q6',
+        question: 'Quelle est la différence entre cybersquatting et typosquatting ?',
+        reponse: 'Cybersquatting : dépôt d\'un nom de domaine identique à une marque pour profiter de sa notoriété (ex. "apple.fr" déposé par quelqu\'un d\'autre). Typosquatting : dépôt d\'un nom très proche avec une faute de frappe pour tromper les internautes (ex. "googlé.fr"). Sanctions : action en contrefaçon si atteinte à la marque (pénale) + action en concurrence déloyale (civile extracontractuelle).'
+      },
+      {
+        id: 'droit-auteur-logiciel-q7',
+        question: 'Auprès de quel organisme réserver un nom de domaine .fr, .eu, .com ? Quelle est la règle d\'attribution ?',
+        reponse: 'AFNIC pour .fr (et outre-mer), EURID pour .eu, ICANN pour .com, .net et .org. Règle : 1er arrivé, 1er servi. Durée 1 an en général, renouvelable si paiement des droits. Choix du nom : liberté sauf noms de marques déposées à l\'INPI ou liés aux institutions politiques.'
+      }
+    ]
+  },
+
+  {
+    id: 'contrats-numeriques',
+    tier: 2,
+    matiere: 'droit',
+    titre: 'Contrats informatiques & services numériques',
+    sousTitre: '6 contrats B2B, SaaS, cloud computing, 8 clauses spécifiques, SI & ERP',
+    cours: 'Les contrats de prestations numériques portent sur des services numériques dans le cadre de la digitalisation, régis par le droit commun des contrats avec des clauses spécifiques liées à l\'environnement professionnel. Les 6 principaux contrats informatiques B2B : (1) contrat d\'étude préalable avec ou sans assistance à la maîtrise d\'oeuvre ; (2) contrat d\'audit informatique ; (3) contrat de conception de logiciel/application ; (4) contrat de conception et maintenance de pages web ; (5) contrat d\'hébergement de site web ; (6) contrat de maintenance des solutions numériques (préventive, corrective ou évolutive). Deux formes principales d\'externalisation informatique : le cloud computing (stockage et accès aux données via internet sans disque dur) et le SaaS – Software as a Service (logiciels accessibles depuis internet sans téléchargement local). Les 8 clauses spécifiques des contrats informatiques : (1) clause de confidentialité, (2) clause de propriété et de transfert de propriété, (3) clause de résultat ou de moyens, (4) clause d\'assistance, (5) clause de veille technologique, (6) clause de réversibilité (récupérer les données en cas de changement de prestataire), (7) clause de responsabilité des contenus, (8) clause de maintenance. Le Système d\'Information (SI) est un ensemble organisé de ressources (techniques, organisationnelles, humaines) pour traiter et diffuser les informations nécessaires dans et entre les organisations. Il a 3 dimensions (technique, humaine, organisationnelle) et 4 fonctions (collecter, stocker, traiter, diffuser). L\'ERP/PGI permet de gérer l\'ensemble des processus en intégrant plusieurs fonctions à partir d\'une base de données unique. 5 intérêts : centralisation, collaboration, meilleures décisions, gains de temps, compétitivité. 4 risques : coût élevé, complexité, personnalisation, migration de données.',
+    pointsCles: [
+      '6 contrats informatiques B2B : étude préalable, audit, conception logiciel, web, hébergement, maintenance',
+      'Cloud computing : stockage et accès données via internet sans disque dur local',
+      'SaaS : logiciels accessibles depuis internet sans téléchargement — ex. Gmail, Office 365',
+      '8 clauses spécifiques : confidentialité, propriété/transfert, résultat/moyens, assistance, veille techno, réversibilité, responsabilité contenus, maintenance',
+      'Clause de réversibilité : récupérer ses données si changement de prestataire — essentielle en cloud',
+      'SI : 3 dimensions (technique, humaine, organisationnelle) — 4 fonctions (collecter, stocker, traiter, diffuser)',
+      'ERP/PGI : base de données unique — 5 intérêts (centralisation, collaboration, décision, temps, compétitivité)',
+      '5 risques SI : sécurité (cyberattaque), opérationnels (obsolescence), sociaux, juridiques, financiers',
+      'BPR (Hammer & Champy) : restructuration autour des processus clés — 2 effets : spécialisation + intégration'
+    ],
+    auteurs: [
+      { nom: 'Hammer & Champy', theorie: 'BPR — Business Process Reengineering : restructuration de l\'entreprise autour de ses processus clés, décloisonnement et externalisation non-valeur' }
+    ],
+    sujetsRef: ['novefi-2023', 'ref-2024', 'purecontrol-s-2024', 'digim-2025', 'ovhcloud-nc-2025'],
+    cards: [
+      {
+        id: 'contrats-numeriques-q1',
+        question: 'Quels sont les 6 principaux types de contrats informatiques B2B ?',
+        reponse: '1. Étude préalable (avec ou sans assistance maîtrise d\'oeuvre) 2. Audit informatique 3. Conception de logiciel/application 4. Conception et maintenance de pages web 5. Hébergement de site web 6. Maintenance des solutions numériques (préventive, corrective, évolutive)'
+      },
+      {
+        id: 'contrats-numeriques-q2',
+        question: 'Quelle est la différence entre cloud computing et SaaS ?',
+        reponse: 'Cloud computing : stockage et accès aux données via internet sans recourir à un disque dur local. SaaS (Software as a Service) : utilisation de logiciels directement accessibles depuis internet sans avoir à les télécharger ni installer sur son ordinateur. Le SaaS est une forme de cloud computing centrée sur les logiciels.'
+      },
+      {
+        id: 'contrats-numeriques-q3',
+        question: 'À quoi sert la clause de réversibilité dans un contrat informatique ?',
+        reponse: 'Elle garantit au client la possibilité de récupérer l\'ensemble de ses données si le contrat prend fin ou si le client change de prestataire. Enjeu crucial en cloud : sans cette clause, les données pourraient rester chez le prestataire ou être inaccessibles.'
+      },
+      {
+        id: 'contrats-numeriques-q4',
+        question: 'Quelles sont les 3 dimensions et les 4 fonctions du Système d\'Information (SI) ?',
+        reponse: '3 dimensions : technique (matériels, logiciels, réseaux), humaine (utilisateurs, compétences), organisationnelle (processus, règles). 4 fonctions : collecter les données, stocker et conserver, traiter la donnée en information, diffuser l\'information aux acteurs concernés.'
+      },
+      {
+        id: 'contrats-numeriques-q5',
+        question: 'Qu\'est-ce qu\'un ERP (PGI) ? Quels sont ses 5 intérêts et ses 4 risques ?',
+        reponse: 'ERP (Enterprise Resource Planning / Progiciel de Gestion Intégré) : progiciel gérant l\'ensemble des processus à partir d\'une base de données unique. 5 intérêts : centralisation des infos, collaboration facilitée, meilleures décisions, gains de temps, compétitivité. 4 risques : coût élevé, complexité, personnalisation difficile, migration de données.'
+      },
+      {
+        id: 'contrats-numeriques-q6',
+        question: 'Qu\'est-ce que le BPR (Business Process Reengineering) selon Hammer et Champy ?',
+        reponse: 'Restructuration de l\'entreprise autour de ses processus clés : décloisonnement des services et externalisation des activités non créatrices de valeur. 2 effets : spécialisation (focus sur les tâches maîtrisées) et intégration (cohérence de l\'ensemble via le SI). Réponse à la demande de flexibilité face à une concurrence accrue.'
+      }
+    ]
+  },
+
+  {
+    id: 'contrat-electronique',
+    tier: 2,
+    matiere: 'droit',
+    titre: 'Contrat électronique & signature numérique',
+    sousTitre: 'B2C : cookies opt-in, double-clic, rétractation 14j — 3 types de signature électronique',
+    cours: 'Le contrat électronique est un contrat passé à distance par l\'intermédiaire d\'un système de communication électronique. Les cookies sont des fichiers générés par le serveur du site afin de conserver les préférences et personnaliser l\'expérience. Durée de vie : 13 mois après dépôt. Régime : B2C = opt-in (consentement obligatoire de la personne physique, sauf cookies strictement nécessaires à la fourniture du service) ; B2B = opt-out (accord implicite si lié à l\'activité professionnelle, avec possibilité de revenir sur le consentement). Même règle pour les newsletters : opt-in B2C, opt-out B2B. Obligations du e-vendeur AVANT la formation : (1) information générale (mentions légales, données personnelles, CGV/CGU) ; (2) information sur le contenu de l\'offre ; (3) information sur la durée de l\'offre. Obligations PENDANT : (1) informer sur les étapes, (2) procédure du double-clic (récapitulatif puis confirmation), (3) envoi de l\'accusé de réception. Obligations APRÈS : (1) paiement sécurisé, (2) livraison sous 30 jours max (si retard : remboursement possible), (3) responsabilité de plein droit du vendeur, (4) droit de rétractation de 14 jours avec formulaire fourni. L\'écrit numérique a la même force probante que l\'écrit papier si : la personne est dûment identifiée et l\'intégrité du document est garantie. La signature électronique a 3 niveaux de valeur probante : simple (scan/case à cocher, à prouver par celui qui l\'appose), avancée (clef publique x509, idem), certifiée (certificat électronique — valeur jusqu\'à preuve contraire par celui qui la conteste). Conditions du certificat : délivré par un tiers de confiance accrédité par l\'ANSSI et conforme au règlement eiDAS (norme européenne) et au RGS (norme française).',
+    pointsCles: [
+      'Cookies : fichier préférence, 13 mois — opt-in B2C (consentement obligatoire) / opt-out B2B (implicite)',
+      'Exception opt-in : cookies strictement nécessaires à la fourniture du service (pas de consentement requis)',
+      'Newsletter : opt-in B2C (accord explicite, révocable) / opt-out B2B (accord implicite, révocable)',
+      '3 obligations e-vendeur AVANT : info générale (mentions légales, DP, CGV), info offre, info durée',
+      '3 obligations PENDANT : étapes, double-clic (récapitulatif + confirmation), accusé de réception',
+      '4 obligations APRÈS : paiement sécurisé, livraison 30j max, responsabilité plein droit, rétractation 14 jours',
+      '3 types signature électronique : simple (scan/case), avancée (clef pub x509), certifiée (certificat électronique)',
+      'Certificat : tiers de confiance accrédité ANSSI, conforme eiDAS (EU) et RGS (FR)',
+      'Signature certifiée : valeur jusqu\'à preuve contraire apportée par celui qui la conteste (charge de preuve inversée)'
+    ],
+    auteurs: [],
+    sujetsRef: ['novefi-2023', 'ref-2024', 'purecontrol-s-2024', 'digim-2025', 'ovhcloud-nc-2025'],
+    cards: [
+      {
+        id: 'contrat-electronique-q1',
+        question: 'Quelle est la règle opt-in / opt-out pour les cookies et les newsletters ?',
+        reponse: 'Opt-in (consentement obligatoire) : cookies en B2C + newsletters B2C. Opt-out (accord implicite) : cookies en B2B + newsletters B2B. Exception : les cookies strictement nécessaires à la fourniture du service ne requièrent pas de consentement. Durée de vie d\'un cookie : 13 mois après son dépôt.'
+      },
+      {
+        id: 'contrat-electronique-q2',
+        question: 'Quelles sont les 3 obligations du e-vendeur AVANT la formation du contrat électronique ?',
+        reponse: '1. Information générale sur le e-vendeur : mentions légales, données personnelles (DP) et CGV/CGU 2. Information sur le contenu de l\'offre (description du produit/service) 3. Information sur la durée de l\'offre (validité des prix, disponibilité)'
+      },
+      {
+        id: 'contrat-electronique-q3',
+        question: 'En quoi consiste la procédure du double-clic et pourquoi est-elle obligatoire ?',
+        reponse: 'Le e-vendeur doit imposer 2 clics obligatoires : 1er clic sur un récapitulatif de commande (vérification), 2ème clic pour confirmer définitivement. C\'est la procédure légale pour s\'assurer du consentement éclairé du consommateur. Sans cette procédure, le contrat peut être contesté.'
+      },
+      {
+        id: 'contrat-electronique-q4',
+        question: 'Quelles sont les 4 obligations du e-vendeur APRÈS la formation du contrat électronique ?',
+        reponse: '1. Mise à disposition d\'un moyen de paiement sécurisé 2. Livraison sous 30 jours max (si retard : le client peut demander remboursement) 3. Responsabilité de plein droit du vendeur sur l\'exécution du contrat 4. Droit de rétractation de 14 jours avec formulaire fourni (sans motif)'
+      },
+      {
+        id: 'contrat-electronique-q5',
+        question: 'Quels sont les 3 types de signature électronique et leur niveau de preuve ?',
+        reponse: '1. Simple (scan ou case à cocher) : doit être prouvée par celui qui l\'appose. 2. Avancée (clef publique x509) : idem, à prouver par celui qui l\'appose. 3. Certifiée (certificat électronique + tiers de confiance ANSSI + eiDAS) : ne vaut que jusqu\'à la preuve contraire apportée par celui qui la conteste — charge de preuve inversée, donc la plus forte en pratique.'
+      },
+      {
+        id: 'contrat-electronique-q6',
+        question: 'Quelles conditions doit remplir une signature électronique certifiée pour avoir valeur probante ?',
+        reponse: '2 conditions cumulatives : 1. Délivrée par un tiers de confiance accrédité par l\'ANSSI (Agence nationale de la sécurité des systèmes d\'information) — le certificat est indépendant du logiciel de signature. 2. Conforme au règlement eiDAS (norme européenne) et au RGS (norme française).'
+      }
+    ]
+  },
+
+  {
+    id: 'avant-contrats-classification',
+    tier: 1,
+    matiere: 'droit',
+    titre: 'Avant-contrats & classification des contrats',
+    sousTitre: 'Pacte de préférence, 2 promesses, 7 critères de classification',
+    cours: 'La situation précontractuelle est la période durant laquelle les parties négocient. Elle comprend les pourparlers (libre négociation sous obligation de bonne foi) et les avant-contrats. Il existe 3 avant-contrats : (1) le pacte de préférence : engagement du promettant à proposer prioritairement au bénéficiaire de négocier avec lui si le contrat venait à être proposé — il ne force pas à conclure, mais oblige à passer en premier lieu par le bénéficiaire ; (2) la promesse unilatérale de contrat : le promettant s\'engage à conclure le contrat si le bénéficiaire (non engagé) accepte l\'offre ; (3) la promesse synallagmatique : les 2 parties s\'engagent à conclure le contrat définitif si une condition indépendante de leur volonté et définie dans la convention se réalise (ex. obtention d\'un prêt). En cas de non-respect d\'un avant-contrat : responsabilité civile contractuelle. La classification des contrats repose sur 7 critères cumulatifs, permettant d\'attribuer jusqu\'à 7 adjectifs à un même contrat et de déterminer l\'ensemble des lois applicables : (1) synallagmatique (obligations réciproques) vs unilatéral (une seule partie s\'engage) ; (2) gré à gré (stipulations librement négociées) vs d\'adhésion (conditions prédéterminées par une partie) ; (3) consensuel (accord des volontés suffit) vs solennel (écrit obligatoire) vs réel (remise de la chose requise) ; (4) à exécution instantanée (une prestation unique) vs successive (prestations échelonnées) ; (5) onéreux (avantage équivalent pour chaque partie) vs gratuit (une seule partie profite) ; (6) commutatif (obligations certaines dès la conclusion) vs aléatoire (portée inconnue car dépendante d\'un aléa) ; (7) nommé (encadré par la loi) vs innommé (pas de législation spécifique).',
+    pointsCles: [
+      '3 avant-contrats : pacte de préférence, promesse unilatérale, promesse synallagmatique',
+      'Pacte de préférence : promettant propose en priorité au bénéficiaire — ne force pas à conclure',
+      'Promesse unilatérale : promettant seul engagé ; bénéficiaire libre d\'accepter ou refuser',
+      'Promesse synallagmatique : les 2 parties engagées sous condition (ex. crédit accordé)',
+      'Non-respect d\'un avant-contrat → responsabilité civile contractuelle',
+      '7 critères de classification : synallagmatique/unilatéral — gré à gré/adhésion — consensuel/solennel/réel — instantané/successif — onéreux/gratuit — commutatif/aléatoire — nommé/innommé',
+      'Contrat d\'adhésion : conditions prédéterminées par une partie (ex. contrat de transport) — ≠ gré à gré',
+      'Contrat aléatoire : portée des obligations inconnue car dépend d\'un événement incertain (ex. assurance)'
+    ],
+    auteurs: [],
+    sujetsRef: ['packitoo-2022', 'agricoopia-nc-2022', 'novefi-2023', 'idemia-nc-2023', 'ref-2024'],
+    cards: [
+      {
+        id: 'avant-contrats-classification-q1',
+        question: 'Quelle est la différence entre pacte de préférence, promesse unilatérale et promesse synallagmatique ?',
+        reponse: 'Pacte de préférence : le promettant s\'engage à proposer prioritairement au bénéficiaire si le contrat est envisagé — ne force pas à conclure. Promesse unilatérale : le promettant est seul engagé, le bénéficiaire est libre. Promesse synallagmatique : les 2 parties s\'engagent si une condition se réalise (ex. crédit accordé). Sanction si non-respect : responsabilité civile contractuelle.'
+      },
+      {
+        id: 'avant-contrats-classification-q2',
+        question: 'Qu\'est-ce qu\'un contrat synallagmatique ? Exemple. Opposé ?',
+        reponse: 'Contrat synallagmatique : chaque partie a des obligations envers l\'autre (ex. vente : vendeur livre, acheteur paie). Opposé : contrat unilatéral où seule une partie s\'engage (ex. donation).'
+      },
+      {
+        id: 'avant-contrats-classification-q3',
+        question: 'Quelle est la différence entre contrat de gré à gré et contrat d\'adhésion ?',
+        reponse: 'Gré à gré : les stipulations sont librement négociées entre les parties (ex. vente d\'une voiture d\'occasion). D\'adhésion : les conditions générales sont prédéterminées par une partie, soustraites à la négociation — l\'autre accepte en bloc (ex. contrat de transport, abonnement téléphonique).'
+      },
+      {
+        id: 'avant-contrats-classification-q4',
+        question: 'Quelle est la différence entre contrat consensuel, solennel et réel ?',
+        reponse: 'Consensuel : la seule rencontre des volontés suffit (le plus répandu — vente, location). Solennel : nécessite un écrit (ex. contrat de mariage). Réel : la formation nécessite la remise effective de la chose (ex. contrat de gage, contrat de dépôt).'
+      },
+      {
+        id: 'avant-contrats-classification-q5',
+        question: 'Qu\'est-ce qu\'un contrat commutatif ? Qu\'est-ce qu\'un contrat aléatoire ? Exemples.',
+        reponse: 'Commutatif : les obligations des parties sont déterminées et certaines dès la conclusion (ex. vente à prix fixe, contrat de travail). Aléatoire : la portée des obligations dépend d\'un événement incertain à la conclusion (ex. assurance, rente viagère, vente en viager).'
+      },
+      {
+        id: 'avant-contrats-classification-q6',
+        question: 'Pourquoi la classification des contrats en 7 critères est-elle utile en pratique ?',
+        reponse: 'Elle permet de déterminer l\'ensemble des lois applicables à chaque contrat en attribuant jusqu\'à 7 adjectifs cumulatifs. Connaître le type de contrat permet d\'identifier exactement les règles de validité, d\'exécution et les sanctions en cas de litige ou d\'inexécution.'
+      }
+    ]
+  },
+
+  {
+    id: 'clauses-execution-contrat',
+    tier: 2,
+    matiere: 'droit',
+    titre: 'Clauses contractuelles & exécution du contrat',
+    sousTitre: '7 clauses particulières B2B, clause abusive, théorie de l\'imprévision, mise en demeure',
+    cours: 'Les clauses contractuelles peuvent être générales (identification des parties, objet, prix) ou particulières/spécifiques (stipulations propres au contrat). Les 7 principales clauses particulières entre professionnels : (1) clause de dédit — dédommager le cocontractant si on ne souhaite plus exécuter avant un délai ; (2) clause de réserve de propriété — le vendeur conserve la propriété du bien jusqu\'au complet paiement ; (3) clause d\'indexation — le prix évolue automatiquement selon l\'évolution d\'une donnée de référence ; (4) clause de renégociation — obligation de renégocier si des données essentielles à l\'équilibre changent ; (5) clause limitative ou exclusive de responsabilité — limite ou exclut la responsabilité en cas de mauvaise exécution (valable uniquement si librement négociée et si elle ne vide pas de toute substance l\'obligation essentielle) ; (6) clause résolutoire — le contrat est résilié de plein droit en cas de manquement contractuel, sans saisir la justice ; (7) clause pénale — détermine à l\'avance la sanction pécuniaire applicable (le juge peut la réviser si excessive). La clause abusive crée au détriment du consommateur (ou non-professionnel) un déséquilibre significatif entre les droits et obligations des parties — sanction : réputée non écrite (reste du contrat valable). Depuis 2019, interdiction dans le code de commerce des clauses abusives entre professionnels (sanction : responsabilité contractuelle). La théorie de l\'imprévision (art. 1195 CC) : si des circonstances imprévisibles rendent l\'exécution excessivement onéreuse pour une partie qui n\'en avait pas accepté le risque, elle peut demander la renégociation. Pendant la négociation, le contrat continue à s\'exécuter. Si pas d\'accord : rupture du contrat d\'un commun accord ou saisine du juge qui peut réviser le contrat ou y mettre fin. La mise en demeure est un écrit obligatoire (sauf exception d\'inexécution) rappelant l\'obligation à exécuter, accordant un nouveau délai et annonçant la sanction prévue en cas de non-respect.',
+    pointsCles: [
+      '7 clauses particulières B2B : dédit, réserve de propriété, indexation, renégociation, limitative/exclusive, résolutoire, pénale',
+      'Réserve de propriété : le vendeur reste propriétaire du bien jusqu\'au complet paiement — sécurité créancier',
+      'Clause résolutoire : résiliation de plein droit sans saisir la justice — évite les délais judiciaires',
+      'Clause pénale : sanction pécuniaire prédéfinie — le juge peut la réviser si manifestement excessive ou dérisoire',
+      'Clause limitative : valable si (1) librement négociée ET (2) ne vide pas l\'obligation de sa substance',
+      'Clause abusive : déséquilibre significatif au détriment du consommateur → réputée non écrite',
+      'Clause abusive B2B (depuis 2019) : engager la responsabilité contractuelle du professionnel',
+      'Théorie de l\'imprévision (art. 1195) : circonstances imprévisibles → renégociation → si échec : juge',
+      'Mise en demeure : écrit obligatoire avant sanction — rappel obligation + délai + sanction annoncée'
+    ],
+    auteurs: [],
+    sujetsRef: ['packitoo-2022', 'agricoopia-nc-2022', 'novefi-2023', 'idemia-nc-2023', 'ref-2024', 'purecontrol-s-2024'],
+    cards: [
+      {
+        id: 'clauses-execution-contrat-q1',
+        question: 'Quelles sont les 7 principales clauses particulières dans un contrat entre professionnels ?',
+        reponse: '1. Dédit (dédommagement si on ne veut plus exécuter) 2. Réserve de propriété (vendeur reste propriétaire jusqu\'au paiement complet) 3. Indexation (prix évoluant selon un indice) 4. Renégociation (si équilibre rompu) 5. Limitative/exclusive de responsabilité 6. Résolutoire (résiliation de plein droit sans justice) 7. Pénale (sanction pécuniaire prédéfinie)'
+      },
+      {
+        id: 'clauses-execution-contrat-q2',
+        question: 'À quelles conditions une clause limitative de responsabilité est-elle valide ?',
+        reponse: '2 conditions cumulatives : 1. Elle doit avoir été librement négociée entre les parties (non imposée unilatéralement). 2. Elle ne doit pas vider de toute substance l\'obligation essentielle du cocontractant. Si l\'une de ces conditions fait défaut, la clause est réputée non écrite.'
+      },
+      {
+        id: 'clauses-execution-contrat-q3',
+        question: 'Qu\'est-ce qu\'une clause abusive et quelle est sa sanction ? Dans quels contrats peut-elle apparaître ?',
+        reponse: 'Clause qui crée, au détriment du consommateur (ou non-professionnel), un déséquilibre significatif entre les droits et obligations des parties. Sanction : réputée non écrite (le reste du contrat reste valable). Depuis 2019 : les clauses abusives entre professionnels (B2B) engagent la responsabilité contractuelle du professionnel (code de commerce).'
+      },
+      {
+        id: 'clauses-execution-contrat-q4',
+        question: 'Qu\'est-ce que la théorie de l\'imprévision (art. 1195 CC) et quelles sont ses conséquences ?',
+        reponse: 'Si des circonstances imprévisibles rendent l\'exécution excessivement onéreuse pour une partie (qui n\'avait pas accepté ce risque), elle peut demander la renégociation. Pendant la négociation, le contrat continue. Si pas d\'accord amiable : 2 solutions — (1) rompre le contrat d\'un commun accord, ou (2) saisir le juge qui révise le contrat ou y met fin.'
+      },
+      {
+        id: 'clauses-execution-contrat-q5',
+        question: 'Qu\'est-ce qu\'une mise en demeure ? Dans quels cas est-elle obligatoire ?',
+        reponse: 'Écrit adressé au débiteur rappelant l\'obligation à exécuter, lui accordant un nouveau délai et annonçant la sanction en cas de non-respect. Caractère obligatoire dans tous les cas, sauf pour l\'exception d\'inexécution (refus de s\'exécuter si l\'autre partie n\'exécute pas la sienne). Forme : lettre recommandée avec accusé de réception mentionnant l\'expression "Mise en demeure".'
+      },
+      {
+        id: 'clauses-execution-contrat-q6',
+        question: 'Quelle est la différence entre clause résolutoire et clause pénale ?',
+        reponse: 'Clause résolutoire : en cas de manquement, le contrat est résilié de plein droit sans saisir la justice (gain de temps considérable). Clause pénale : détermine à l\'avance la somme d\'argent à payer en cas de non-exécution — le juge peut la réviser à la hausse ou à la baisse si elle est manifestement excessive ou dérisoire.'
       }
     ]
   }

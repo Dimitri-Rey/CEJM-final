@@ -245,6 +245,109 @@ const conditions = [
     sujetExemple: "Packitoo 2022 : Befor utilise la technologie brevetée de Gobert (contrefaçon) ET se présente comme concurrent créant une confusion (concurrence déloyale). Les deux actions sont cumulables.",
     piegeAnnexe: null,
   },
+  ,
+  {
+    id: 'protection-logiciel-droit-auteur',
+    titre: 'Protection d\'un logiciel par le droit d\'auteur — 2 conditions cumulatives',
+    notionId: 'droit-auteur-logiciel',
+    matiere: 'droit',
+    intro: 'Un logiciel est protégé par le droit d\'auteur dès sa création, sans dépôt. Mais 2 conditions cumulatives doivent être réunies pour que la protection naisse.',
+    conditions: [
+      {
+        numero: 1,
+        texte: 'L\'œuvre doit avoir un CARACTÈRE ORIGINAL (unique)',
+        explication: 'Le logiciel doit porter l\'empreinte de la personnalité de son auteur. Une simple liste de données ou un algorithme trivial sans créativité ne peut pas être protégé. L\'originalité s\'apprécie au moment de la création.',
+        piegeClassique: 'Un logiciel purement fonctionnel, sans aucune originalité dans sa conception ou son interface, peut être refusé par les juges. Il ne s\'agit pas d\'une condition de qualité mais d\'une empreinte créative de l\'auteur.',
+      },
+      {
+        numero: 2,
+        texte: 'La protection naît SANS DÉPÔT dès la création',
+        explication: 'Contrairement au brevet (qui exige un dépôt à l\'INPI), la protection par le droit d\'auteur est automatique dès la première ligne de code si la condition d\'originalité est remplie. Pas besoin d\'enregistrement officiel.',
+        piegeClassique: 'Confondre droit d\'auteur (protection automatique = logiciel) et brevet (dépôt obligatoire = invention). Les logiciels sont EXCLUS du régime du brevet en France et en Europe.',
+      },
+    ],
+    sanction: 'Si ces conditions sont réunies → protection automatique. Atteinte → contrefaçon (pénale : 300 000€ + 3 ans) + concurrence déloyale (civile : D&I). Pour les logiciels créés par un salarié dans le cadre de son contrat de travail : droits patrimoniaux → employeur automatiquement.',
+    sujetExemple: 'NOVEFI 2023 / DIGIM 2025 : logiciel développé par un développeur salarié → droits patrimoniaux appartiennent à l\'employeur. Si un concurrent copie le code source → contrefaçon caractérisée.',
+    piegeAnnexe: 'Piège : les droits moraux restent TOUJOURS au salarié (droit de paternité, intégrité). Seuls les droits patrimoniaux passent à l\'employeur pour les logiciels. Pour une œuvre classique (non logiciel), l\'intégralité des droits reste au salarié.',
+  },
+  {
+    id: 'clause-limitative-validite',
+    titre: 'Validité d\'une clause limitative de responsabilité — 2 conditions cumulatives',
+    notionId: 'clauses-execution-contrat',
+    matiere: 'droit',
+    intro: 'Une clause limitative ou exclusive de responsabilité permet à un débiteur de limiter ou d\'exclure sa responsabilité en cas de mauvaise exécution du contrat. Elle n\'est valide qu\'à 2 conditions cumulatives.',
+    conditions: [
+      {
+        numero: 1,
+        texte: 'La clause doit avoir été LIBREMENT NÉGOCIÉE entre les parties',
+        explication: 'La clause ne peut pas être imposée unilatéralement par l\'une des parties sans que l\'autre ait pu en discuter les termes. Elle doit résulter d\'une véritable négociation, être connue et acceptée par le cocontractant. Dans un contrat d\'adhésion, cette condition est souvent difficile à satisfaire.',
+        piegeClassique: 'OVHcloud NC-2025 : la clause limitative de responsabilité dans les CGV d\'OVH. Question : a-t-elle été librement négociée ? Dans un contrat d\'adhésion pro, la négociation est plus facilement admise qu\'en B2C.',
+      },
+      {
+        numero: 2,
+        texte: 'La clause ne doit pas VIDER DE TOUTE SUBSTANCE l\'obligation essentielle',
+        explication: 'La limitation ne peut pas aller jusqu\'à supprimer totalement l\'obligation principale du débiteur. Si la clause supprime la responsabilité sur l\'essence même du contrat (ex. sauvegarde sans garantir la sauvegarde), elle est réputée non écrite.',
+        piegeClassique: 'OVHcloud 2025 : si la clause exonère OVH de toute responsabilité pour la perte de données dans un contrat de sauvegarde → vide l\'obligation essentielle → clause réputée non écrite. Le tribunal a appliqué ce raisonnement.',
+      },
+    ],
+    sanction: 'Si l\'une des 2 conditions fait défaut → clause réputée non écrite (le reste du contrat reste valable). Le débiteur reste pleinement responsable comme si la clause n\'existait pas. ≠ Clause abusive (B2C) : déséquilibre significatif → même sanction : réputée non écrite.',
+    sujetExemple: 'OVHcloud NC-2025 : contrat de sauvegarde avec clause limitant la responsabilité d\'OVH. Mauvaise exécution (backup dans même datacenter) → tribunal examine les 2 conditions → si l\'une est absente : clause inopposable → OVH responsable intégralement.',
+    piegeAnnexe: 'Ne pas confondre clause limitative (réduit la responsabilité) et clause exclusive (supprime totalement la responsabilité). La clause exclusive est encore plus difficile à valider car elle vide plus facilement l\'obligation de sa substance.',
+  },
+  {
+    id: 'validite-marque',
+    titre: 'Protection d\'une marque — 7 conditions cumulatives',
+    notionId: 'propriete-intellectuelle',
+    matiere: 'droit',
+    intro: 'Une marque est un signe distinctif permettant de distinguer les produits/services d\'une entreprise de ceux de ses concurrents. Pour être protégée, elle doit réunir 7 conditions. La condition essentielle est d\'être DISTINCTIVE.',
+    conditions: [
+      {
+        numero: 1,
+        texte: 'Être DISTINCTIVE (condition essentielle)',
+        explication: 'La marque doit permettre d\'identifier les produits et de les distinguer de ceux des concurrents, sans être descriptive du produit lui-même. "Pomme" pour de la téléphonie = distinctif. "Pomme" pour des fruits = non distinctif (descriptif).',
+        piegeClassique: 'Confondre distinctif et original. La marque n\'a pas besoin d\'être originale au sens artistique, mais elle ne doit pas décrire directement le produit vendu.',
+      },
+      {
+        numero: 2,
+        texte: 'Être susceptible de REPRÉSENTATION graphique ou numérique',
+        explication: 'La marque doit pouvoir être reproduite dans un registre officiel : image, son, forme 3D, couleur, slogan. Elle doit être précise, claire et stable.',
+        piegeClassique: null,
+      },
+      {
+        numero: 3,
+        texte: 'Ne pas reposer sur des éléments devenus USUELS dans le langage courant',
+        explication: 'Un terme entré dans le vocabulaire courant pour désigner un produit ne peut pas être monopolisé par une entreprise (ex. "Post-it" risque de tomber dans le domaine public si le terme devient générique).',
+        piegeClassique: null,
+      },
+      {
+        numero: 4,
+        texte: 'Ne pas être contraire à un EMBLÈME ÉTATIQUE',
+        explication: 'La marque ne peut pas reprendre des drapeaux nationaux, emblèmes d\'États ou symboles officiels d\'organisations internationales.',
+        piegeClassique: null,
+      },
+      {
+        numero: 5,
+        texte: 'Ne pas porter atteinte à l\'ORDRE PUBLIC',
+        explication: 'La marque ne peut pas être contraire aux bonnes mœurs, aux valeurs fondamentales de la société ou à l\'ordre public établi.',
+        piegeClassique: null,
+      },
+      {
+        numero: 6,
+        texte: 'Ne pas INDUIRE EN ERREUR le consommateur',
+        explication: 'La marque ne peut pas tromper le consommateur sur la nature, la qualité ou l\'origine géographique du produit. Ex. : "Produit montagnard" pour un produit industriel = trompeur.',
+        piegeClassique: null,
+      },
+      {
+        numero: 7,
+        texte: 'Ne pas être déposée DE MAUVAISE FOI',
+        explication: 'Le dépôt de marque doit être sincère, dans le but d\'utiliser réellement la marque. Un dépôt effectué uniquement pour bloquer un concurrent ou un tiers est de mauvaise foi et peut être annulé.',
+        piegeClassique: 'Packitoo 2022 : si une entreprise dépose une marque identique à celle d\'un concurrent uniquement pour le bloquer → mauvaise foi → nullité du dépôt.',
+      },
+    ],
+    sanction: 'Marque valide : dépôt à l\'INPI (France), EUIPO (UE), OMPI (international) — durée 10 ans renouvelables, principe de spécialité. Atteinte : contrefaçon (pénale : 400 000€ + 4 ans) + civile (D&I). Signe non distinctif → refus d\'enregistrement ou nullité si enregistré.',
+    sujetExemple: 'Packitoo 2022 / IDEMIA 2023 : vérifier qu\'un nom/logo déposé à l\'INPI satisfait les 7 conditions, notamment qu\'il est distinctif et non déposé de mauvaise foi.',
+    piegeAnnexe: 'Principe de spécialité : la marque n\'est protégée que pour les produits/services pour lesquels elle a été déposée et dans le territoire couvert par le dépôt. Une même marque peut coexister dans des classes différentes.',
+  }
 ]
 
 export default conditions
